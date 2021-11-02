@@ -1,3 +1,25 @@
+@font-face {
+	font-family: 'SegoeWP';
+	src: url('../fonts/ofont.ru_Segoe WP.eot');
+	src: local('☺'), url('../fonts/ofont.ru_Segoe WP.woff') format('woff'), url('fonts/ofont.ru_Segoe WP.ttf') format('truetype'), url('fonts/ofont.ru_Segoe WP.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'MyriadPro-Regular';
+	src: url('../fonts/MyriadPro-Regular.eot');
+	src: local('☺'), url('../fonts/MyriadPro-Regular.woff') format('woff'), url('fonts/MyriadPro-Regular.ttf') format('truetype'), url('fonts/MyriadPro-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'LaoUI';
+	src: url('../fonts/LaoUI.eot');
+	src: local('☺'), url('../fonts/LaoUI.woff') format('woff'), url('../fonts/LaoUI.ttf') format('truetype'), url('../fonts/LaoUI.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -6,13 +28,14 @@ html {
 }
 
 body {
+    
     margin: 0;
-    font-family:'Lucida Sans';
+    font-family:'Lucida Sans', sans-serif;
     font-size: 20px;
-    background-color:#464646;
     color: black;
 
 }
+
     /*      Wrapper     */
 .wrapper {
     display: inline-flexbox;
@@ -25,85 +48,203 @@ header {
     url("../images/header.jpg") top
     no-repeat ;
     background-size: cover;
+    padding-left:145px ;
+}
+@media (max-width: 640px){
+    .header {
+        display: inline-block;
+    }
 }
 .header__inner {
     display: inline-flex;
-    flex-wrap:  wrap;
-    max-width: 100%;
+    height: inherit;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    max-height: 62px;
+    max-width: 100%;
     
 }
-@media (min-width: 640px){
-    .header__inner {
-        background-color: grey;
-    }
+@media (min-width:650px){
+ .header__inner{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px;
+ }   
 }
+
     /*       Menu       */
 .menu {
-    display:flex;
+    display:inline-flex;
+    height: 62px;
     background-color:#eec006;
+    justify-content: space-around;
+    font-size: 0;
 }
 @media (min-width: 640px){
     .menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        height: 41px;
+        display: inline-flex;
     }
 }
 .menu__item {
-    padding: 10px;
-    font-family: 'Segoe UI';
-    font-size: 18pt;
-    text-transform: uppercase;
-    color: rgb(87, 82, 82);
-    border-right: 3px solid rgba(87, 82, 82, 0.247);
+    display:flex;
+    height: inherit;
+    padding: 15px;
+    font-weight: normal;
+    border-right: 1px solid rgba(87, 82, 82, 0.247);
     text-decoration: none;
+    font-size: 19px;
+    font-family: "SegoeWP";
+    color: rgb(155, 125, 8);
+    text-transform: uppercase;
+    text-align: center;
 }
-.menu__item::before {
-    content: "#";
+@media (min-width:640px){
+    .menu__item {
+        display: flex;
+        padding-inline: 20px;
+        font-size: 17px;
+    }
 }
+
+  
 .menu__item:hover{
     background-color:#fb940e ;
     text-decoration: none;
     transition: color .2s linear;
 }
+.about_us::before {
+    background-image: url("../images/aboutus.svg");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    display: inline-flex;
+    width: 25px; 
+    height: 25px;
+    content:"";
+}
+.services::before {
+    background-image: url("../images/services.svg");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    display: inline-flex;
+    width: 25px; 
+    height: 25px;
+    content:"";
+}
+.contact::before {
+    background-image: url("../images/contact.svg");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    display: inline-flex;
+    width: 25px; 
+    height: 25px;
+    content:"";
+}
     /*      Container       */
 .container {
     display: inherit;
-    min-width: 630px;
+    min-width: 640px;
+    box-sizing: padding-box;
+    
+}
+
+@media (min-width: 640px){
+    .container{
+        max-width: 1020px;
+        justify-content: center;
+    }
 }
     /*      Intro       */
 .intro {
     display: inline-block;
-    max-width: 100%;
-    height: 100vh;
 }
+
 .intro__inner {
+    display: block;
     max-width: 100%;
     height: 100vh;
     background: 
     url("../images/intro.jpg") top
     no-repeat;
 }
+@media (min-width:650px){
+    .intro__inner{
+        display: block;
+        margin-block: 100px;
+        width:550px;
+        margin-left: 30px;
+    }   
+   }
+  
     /*      Logo      */
 .logo {
-    font-family: 'Segoe UI';
-    font-size: 19pt;
+    display:inline;
+    font-family: 'Lucida Sans';
+    font-size: 19px;
     font-weight: 100;
+    font-style: italic;
     text-transform: uppercase;
-    text-align: center;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.42);
     color: white;
-    padding: 10px;
+    text-align: center;
+    padding-block: 8px;
+    padding-inline: 15px;
+    
 }
-@media (max-width: 640px){
+@media (max-width: 670px){
     .logo {
         background-color: rgb(56, 53, 53);
-        
+        background-image: -moz-linear-gradient( 90deg, rgb(46, 45, 45) 0%, rgb(91,91,91) 100%);
+        background-image: -webkit-linear-gradient( 90deg,  rgb(46, 45, 45) 0%, rgb(91,91,91) 100%);
+        background-image: -ms-linear-gradient( 90deg,  rgb(46, 45, 45) 0%, rgb(91,91,91) 100%);
     }
 }
+@media (min-width:650px){
+    .logo {
+        display: inline;
+        font-size: 41px;
+
+    } 
+           
+    .logo::after {
+        content:"craft by css author.com";
+        font-family:"LaoUI";
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 50;
+        color: rgba(255, 255, 255, 0.769);
+        text-shadow: none;
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: center;
+    }
+}
+ 
 .logo::before {
-    content: "##";
+    display: inline-flex;
+    padding-block: 15px;
+    background-image: url("../images/logo.svg");
+    background-size: 45px 45px;
+    background-repeat: no-repeat;
+    padding-right: 50px;
+    width: 45px; 
+    height: 45px;
+    content:"";
+    
+}
+@media (min-width:650px){
+    .logo::before {
+        display: inline-flex;
+        padding-block: 30px;
+        background-size: 100px 100px;
+        width: 100px; 
+        height: 100px;
+        content:"";
+
+    }      
 }
     /*      Slider      */
 .midbar {
