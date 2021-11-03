@@ -22,6 +22,14 @@
     src: url('../fonts/LaoUI.eot');
     src: local('☺'), url('../fonts/LaoUI.woff') format('woff'), url('../fonts/LaoUI.ttf') format('truetype'), url('../fonts/LaoUI.svg') format('svg');
 }
+@font-face {
+    font-family: 'Conv_segoeuil';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/segoeuil.eot');
+    src: local('☺'), url('../fonts/segoeuil.woff') format('woff'), url('../fonts/segoeuil.ttf') format('truetype'), url('../fonts/segoeuil.svg') format('svg');
+}
 
 html {
     box-sizing: border-box;
@@ -52,20 +60,19 @@ header {
     display: inherit;
 
     max-width: 100%;
-    height: 400px;
+    height: 390px;
 
     background: url('../images/header.jpg') top
     no-repeat ;
     background-size: cover;
 }
-@media (max-width: 640px) {
+@media (min-width: 640px) {
     .header {
-        display: inline-block;
-
         width: 1300px;
         height: 570px;
     }
 }
+
 .header__inner {
     display: inline-flex;
     align-items: center;
@@ -80,7 +87,7 @@ header {
         display: flex;
         justify-content: space-between;
 
-        padding-top: 75px;
+        padding-top: 70px;
     }
 }
 
@@ -95,7 +102,7 @@ header {
 
     background-color: #eec006;
 }
-@media (min-width: 640px) {
+@media (min-width: 650px) {
     .menu {
         display: inline-flex;
 
@@ -119,7 +126,7 @@ header {
     color: rgb(155, 125, 8);
     border-right: 1px solid rgba(87, 82, 82, .247);
 }
-@media (min-width:640px) {
+@media (min-width:650px) {
     .menu__item {
         font-size: 17px;
 
@@ -177,17 +184,16 @@ header {
 }
 /*      Container       */
 .container {
-    display: inherit;
+    display: inline-block;
+    justify-content: center;
 
     box-sizing: padding-box;
-    min-width: 640px;
+    width: 640px;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 650px) {
     .container {
-        justify-content: center;
-
-        max-width: 1020px;
+        width: 1020px;
     }
 }
 /*      Intro       */
@@ -206,13 +212,16 @@ header {
 }
 @media (min-width:650px) {
     .intro__inner {
-        display: block;
+        position: absolute;
+        z-index: 104;
+        top: 168px;
+        left: 150px;
 
-        width: 550px;
-        height: 330px;
-        margin-left: 30px;
+        width: 549px;
+        height: 327px;
     }
 }
+
 
 /*      Logo      */
 .logo {
@@ -292,24 +301,26 @@ header {
         padding-block: 30px;
     }
 }
-/*      Slider      */
+/*      Midbar      */
 .midbar {
     display: flex;
     align-items: center;
     justify-content: space-around;
 
-    padding-top: 30px;
+    margin-top: 40px;
 
     background-color: white;
 }
-.midbar__inner {
+
+.midbar__item {
+    display: block;
+}
+.midbar__item__text {
     font-family: 'Segoe UI';
     font-size: 23pt;
     font-weight: 100;
 
-    width: 33%;
-    padding-top: 100px;
-
+    text-align: center;
     text-transform: uppercase;
 
     color: rgb(14, 13, 13);
