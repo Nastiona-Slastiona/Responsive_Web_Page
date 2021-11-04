@@ -124,12 +124,16 @@ header {
     height: 65px;
 
     background-color: #eec006;
+   
 }
 @media (min-width: 650px) {
     .menu {
         display: inline-flex;
 
         height: 41px;
+        box-shadow: 3px 0 0 7px rgb(245, 196, 6),
+        3px 0 0 14px rgba(245, 196, 6, 0.6),
+        3px 0 0 21px rgba(245, 196, 6, 0.4);
     }
 }
 .menu__item {
@@ -297,7 +301,7 @@ header {
     padding-inline: 15px;
 }
 @media (max-width: 650px) {
-    .logo {
+    header .logo {
         background-color: rgb(56, 53, 53);
         background-image:    -moz-linear-gradient( 90deg, rgb(46, 45, 45) 0%, rgb(91,91,91) 100%);
         background-image: -webkit-linear-gradient( 90deg,  rgb(46, 45, 45) 0%, rgb(91,91,91) 100%);
@@ -305,13 +309,13 @@ header {
     }
 }
 @media (min-width:650px) {
-    .logo {
+    header .logo {
         font-size: 41px;
 
         display: inline;
     }
 
-    .logo::after {
+    header .logo::after {
         font-family: 'LaoUI';
         font-size: 13px;
         font-weight: 50;
@@ -486,7 +490,7 @@ header {
 .message {
     width: 284px;
     height: 42px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 
     background-image: url('/assets/images/message.png');
     background-repeat: no-repeat;
@@ -561,7 +565,7 @@ form {
     margin: 0 auto;
 }
 
-  
+  /*      Little cross      */
 .little-cross{
     position: absolute;
     left: 286px;
@@ -573,7 +577,22 @@ form {
 .little-cross:hover{
     opacity: 1;
 }
+/*      Section2        */
+.section2 {
+    height:466px ;
+    background-color: #474747 ;
+}
 /*      Footer      */
 footer {
+    background-color:#4c4c4c ;
     text-align: center;
+    height: 43px;
+    padding: 5px;
+    box-shadow: 0 -3px 10px 2px rgb(31, 29, 29);
+}
+footer .logo {
+    width:100px
+}
+footer .logo::before {
+    background-size: 30px 30px;
 }
