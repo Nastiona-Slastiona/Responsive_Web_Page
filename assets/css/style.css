@@ -30,7 +30,13 @@
     src: url('../fonts/segoeuil.eot');
     src: local('☺'), url('../fonts/segoeuil.woff') format('woff'), url('../fonts/segoeuil.ttf') format('truetype'), url('../fonts/segoeuil.svg') format('svg');
 }
-
+@font-face {
+	font-family: 'Asap';
+	src: url('../fonts/Asapregular.eot');
+	src: local('☺'), url('../fonts/Asapregular.woff') format('woff'), url('../fonts/Asapregular.ttf') format('truetype'), url('../fonts/Asapregular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 html {
     box-sizing: border-box;
 }
@@ -54,22 +60,29 @@ body {
 /*      Wrapper     */
 .wrapper {
     display: inline-flexbox;
+    justify-content: center;
 }
 /*      Header       */
 header {
-    display: inherit;
-
-    max-width: 100%;
+    display: block;
+    width: 100vw;
     height: 390px;
-
-    background: url('../images/header.jpg') top
-    no-repeat ;
+    /*
+    height: 570px;*/
+    background-image: url("/assets/images/header.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
+   
 }
-@media (min-width: 640px) {
+@media (min-width: 650px) {
     .header {
-        width: 1300px;
+        display:flex;
+        justify-content: center;
+        max-width: 100vw;
         height: 570px;
+        background-size: 100% 100%;
+        background-image: url("/assets/images/header.jpg");
+        
     }
 }
 
@@ -77,17 +90,15 @@ header {
     display: inline-flex;
     align-items: center;
     justify-content: space-around;
-
     max-width: 100%;
-    height: inherit;
-    max-height: 62px;
+    
 }
 @media (min-width:650px) {
     .header__inner {
         display: flex;
         justify-content: space-between;
+        padding: 30px;
 
-        padding-top: 70px;
     }
 }
 
@@ -114,7 +125,6 @@ header {
     font-size: 19px;
     font-weight: normal;
 
-    display: flex;
 
     height: inherit;
     padding: 15px;
@@ -129,10 +139,7 @@ header {
 @media (min-width:650px) {
     .menu__item {
         font-size: 17px;
-
         display: flex;
-
-        padding-inline: 20px;
     }
 }
 
@@ -184,39 +191,69 @@ header {
 }
 /*      Container       */
 .container {
-    display: inline-block;
-    justify-content: center;
-
-    box-sizing: padding-box;
+    display: block;
     width: 640px;
 }
 
 @media (min-width: 650px) {
     .container {
+        display: block;
         width: 1020px;
+        margin-inline: 140px;
     }
 }
 /*      Intro       */
 .intro {
-    display: inline-block;
+   display: block;
+    
 }
-
-.intro__inner {
+@media (min-width: 640px){
+    .intro{
+        display: inline-flex;
+        align-content:center;
+        justify-content: center;
+    }
+}
+.intro__image{
     display: block;
-
-    max-width: 100%;
-    height: 100vh;
-
-    background: url('../images/intro.jpg') top
+    width: 640px;
+    height: 327px;
+    background-size: 100% 100%;
+    background: url('/assets/images/intro.jpg') top
     no-repeat;
 }
-@media (min-width:650px) {
-    .intro__inner {
-        position: absolute;
-        z-index: 104;
-        top: 168px;
-        left: 150px;
+@media (min-width: 640px){
+    .intro__image{
+        width: 550px;
+        height: 327px;
+        background-size: 100% 100%;
+    }
+}
+.intro__text {
+    visibility: hidden;
+}
+@media (min-width:640px){
+    .intro__text {
+        display:inline-block;
+        visibility: visible;
+        font-size: 63px;
+        font-family: "Asap";
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: center;
+        width: 500px;
+        padding-top: 100px;
+    }
+}
+.firstLine {
+    color: rgb(245, 197, 6);
 
+}
+.secondLine {
+    color:white
+}
+@media (min-width:650px) {
+    .intro__image {
         width: 549px;
         height: 327px;
     }
@@ -238,10 +275,10 @@ header {
     color: white;
     text-shadow: 0 2px 0 rgba(0, 0, 0, .42);
 
-    padding-block: 8px;
+    padding-block: 10px;
     padding-inline: 15px;
 }
-@media (max-width: 670px) {
+@media (max-width: 650px) {
     .logo {
         background-color: rgb(56, 53, 53);
         background-image:    -moz-linear-gradient( 90deg, rgb(46, 45, 45) 0%, rgb(91,91,91) 100%);
@@ -286,6 +323,7 @@ header {
     background-size: 45px 45px;
 
     padding-block: 15px;
+    
 }
 @media (min-width:650px) {
     .logo::before {
@@ -307,23 +345,61 @@ header {
     align-items: center;
     justify-content: space-around;
 
-    margin-top: 40px;
-
+    padding-top: 30px;
+    padding-bottom: 20px;
     background-color: white;
+    background-image: url("/assets/images/bckg_midbar.png");
+    background-size: 100% 100%;
 }
-
 .midbar__item {
-    display: block;
+    display: inline;
 }
-.midbar__item__text {
+@media (min-width:650px){
+    .midbar__item{
+        display: inline-block;
+    }
+}
+.midbar__icon {
+    display:flex;
+    justify-content: center;
+    padding: 10px;
+}
+@media (min-width:650px){
+    .midbar__icon{
+        display: flex;
+    }
+}
+.midbar__text {
+    display: inline-block;
     font-family: 'Segoe UI';
-    font-size: 23pt;
+    font-size: 23px;
     font-weight: 100;
 
     text-align: center;
     text-transform: uppercase;
 
     color: rgb(14, 13, 13);
+}
+@media (min-width:650px){
+    .midbar__text{
+        display: inline-block;
+    }
+}
+/*      Infobox     */
+.infobox {
+    display:grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    background-image: unset;
+}
+@media (min-width: 650px){
+    .infobox{
+        display:grid;
+        background-color: white;
+        background-image: url("/assets/images/infobox_bckg.jpg");
+        max-width: 100%;
+        height: 509px;
+    }
 }
 /*      Footer      */
 footer {
