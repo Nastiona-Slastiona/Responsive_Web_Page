@@ -365,45 +365,7 @@ header .logo {
         padding-block: 35px;
     }
 }
-/*      Midbar      */
-.midbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
 
-    padding-top: 30px;
-    padding-bottom: 20px;
-
-    background-color: white;
-    background-image: url('/assets/images/bckg_midbar.png');
-    background-size: 100% 100%;
-}
-.midbar__item {
-    display: inline;
-}
-@media (min-width:660px) {
-    .midbar__item {
-        display: inline-block;
-    }
-}
-.midbar__icon {
-    display: flex;
-    justify-content: center;
-
-    padding: 10px;
-}
-.midbar__text {
-    font-family: 'Segoe UI';
-    font-size: 23px;
-    font-weight: 100;
-
-    display: inline-block;
-
-    text-align: center;
-    text-transform: uppercase;
-
-    color: rgb(14, 13, 13);
-}
 /*      Infobox     */
 .infobox {
     display: grid;
@@ -422,7 +384,8 @@ header .logo {
 
         background-color: white;
         background-image: url('/assets/images/infobox_bckg.jpg');
-
+       
+      
         grid-template-rows: 2;
     }
 }
@@ -490,6 +453,68 @@ header .logo {
     background-image: url('/assets/images/twit_bird.svg');
     background-repeat: no-repeat;
     background-size: 159px 133px;
+}
+/*      Midbar      */
+.midbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    background-color: white;
+    background-image: url('/assets/images/bckg_midbar.png');
+    background-size: 100% 100%;
+    box-shadow: 0px -3px 0px 4px rgba(255, 255, 255, .5),0px -3px 0px 9px rgba(255, 255, 255, .4), 
+                inset 0px -3px 0px 4px rgba(255, 255, 255, .5), 0px -3px 0px 9px rgba(255, 255, 255, .4);
+}
+@media (min-width: 660px){
+    .midbar{
+        box-shadow: -3px 0px 6px 3px rgba(19, 3, 3, 0.4);
+        box-sizing: border-box;
+        position: relative;
+    }
+}
+.midbar__item {
+    display: inline;
+}
+@media (min-width:660px) {
+    .midbar__item {
+        display: inline-block;
+    }
+}
+.midbar__icon {
+    display: flex;
+    justify-content: center;
+
+    padding: 10px;
+}
+.midbar__text {
+    font-family: 'Segoe UI';
+    font-size: 23px;
+    font-weight: 100;
+
+    display: inline-block;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: rgb(14, 13, 13);
+}
+.midbar .container {
+    width: 640px;
+    display:flex;
+    justify-content: space-around;
+}
+@media (min-width: 660px){
+    .midbar .container{
+        width: 1020px;
+        display: inline-flex;
+        justify-content: space-around;
+        height: fit-content;
+    
+    }
 }
 /*      Messages        */
 .message {
