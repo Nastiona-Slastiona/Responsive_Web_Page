@@ -45,7 +45,7 @@ header {
     display: flex;
     justify-content: space-around;
 
-    width: 460px;
+    width: max-content;
     height: 65px;
     margin: 0;
     padding: 0;
@@ -56,7 +56,7 @@ header {
     .menu {
         display: inline-flex;
 
-        width: fit-content;
+        width: max-content;
         height: 41px;
         margin: 0 auto;
         padding: 0;
@@ -70,7 +70,8 @@ header {
     font-weight: normal;
 
     height: inherit;
-    padding-top: 15px;
+    padding: 16px;
+
 
     text-align: center;
     text-decoration: none;
@@ -79,7 +80,6 @@ header {
     color: rgb(155, 125, 8);
     border-right: 1px solid rgba(87, 82, 82, .247);
 
-    padding-inline: 10px;
 }
 @media (min-width:660px) {
     .menu__item {
