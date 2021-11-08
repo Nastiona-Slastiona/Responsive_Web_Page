@@ -23,12 +23,16 @@
 }
 .midbar__item {
     display: inline;
+    transition:1s;
 }
 @media (min-width:660px) {
     .midbar__item {
         display: inline-block;
         margin-inline: 105px;
     }
+}
+.midbar__item:hover{
+    transform: scale(1.3);
 }
 .midbar__icon {
     display: flex;

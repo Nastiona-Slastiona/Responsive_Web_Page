@@ -338,6 +338,13 @@ button {
     border-end-end-radius: 10px;
     border-start-end-radius: 10px;
 }
+button:hover{
+    background-color: #e1861e;
+    background-image:    -moz-linear-gradient( 90deg, #d1900d 0%,#e1861e 100%);
+    background-image: -webkit-linear-gradient( 90deg, #d1900d 0%,#e1861e 100%);
+    background-image:     -ms-linear-gradient( 90deg,  #d1900d 0%,#e1861e 100%);
+
+}
 /*      Input       */
 input {
     width: 100%;
@@ -376,7 +383,7 @@ form {
     .little-cross {
         position: absolute;
         top: 1050px;
-        left: 450px;
+        left: 460px;
 
         width: 10px;
         height: 10px;
