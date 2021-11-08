@@ -35,9 +35,9 @@ header {
         justify-content: space-between;
     }
 }
-@media (min-width: 660px){
+@media (min-width: 660px) {
     .header .cotainer {
-        display:flex;
+        display: flex;
     }
 }
 /*       Menu       */
@@ -47,18 +47,19 @@ header {
 
     width: 460px;
     height: 65px;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 
     background-color: #eec006;
 }
 @media (min-width: 660px) {
     .menu {
-        display:inline-flex;
+        display: inline-flex;
+
         width: fit-content;
         height: 41px;
         margin: 0 auto;
-        padding: 0px;
+        padding: 0;
 
         box-shadow: -3px -3px 0 1px rgb(245, 197, 6, .3),-6px -6px 0 2px rgb(245, 197, 6, .3);
     }
@@ -67,9 +68,9 @@ header {
     font-family: 'SegoeWP';
     font-size: 19px;
     font-weight: normal;
+
     height: inherit;
     padding-top: 15px;
-  
 
     text-align: center;
     text-decoration: none;
@@ -83,11 +84,12 @@ header {
 @media (min-width:660px) {
     .menu__item {
         font-size: 17px;
-        padding: 15px;
+
         display: flex;
         align-items: center;
 
         width: max-content;
+        padding: 15px;
 
         padding-inline-end: 20px ;
     }
@@ -195,17 +197,15 @@ header {
         text-transform: uppercase;
     }
 }
-.player{
-    display:none;
-
+.player {
+    display: none;
 }
-.player__button{
+.player__button {
     display: none;
 }
 
-.player__line{
+.player__line {
     display: none;
-    
 }
 
 .firstLine {
@@ -215,130 +215,153 @@ header {
     color: white;
 }
 
-.left_button{
-   display: none;
- 
+.left_button {
+    display: none;
 }
 
-.right_button{
-    display:none;
+.right_button {
+    display: none;
 }
-.intro .round_button{
-    display:none;
+.intro .round_button {
+    display: none;
 }
-@media (min-width:660px){
-    .player{
-        display:inherit;
+@media (min-width:660px) {
+    .player {
         position: relative;
-        top:240px;
-        left:70px;
+        top: 240px;
+        left: 70px;
+
+        display: inherit;
+
         width: 403px;
         height: 13px;
-        border-radius:7px ;
+
+        border-radius: 7px ;
         background-color: rgb(155, 125, 8, .7);
     }
-    .player__button{
-        display: inherit;
-        width:30px;
-        height:30px;
+    .player__button {
         position: relative;
-        top:-25px;
+        top: -25px;
         left: -40px;
-        background-color: rgba(245, 197, 7, 0.5);
-    }
-    .player__button::before{
-        content: "";
-        width:10px;
-        height: 10px;
-        padding:10px;
-        position: relative;
-        top:15px;
-        left:10px;
-        background-size: 10px 20px;
-        background-image: url("/assets/images/play.png");
-        background-repeat: no-repeat;
-    }
-    .player__button:hover{
-        background-color: rgba(245, 197, 7);
-        opacity: 1;
-    }
-    .player__line{
+
         display: inherit;
-        width: 150px;
-        height: 13px;
-        border-bottom-left-radius :7px;
-        border-top-left-radius: 7px;
-        background-color: rgb(255, 201, 24);
-        opacity: 1;
+
+        width: 30px;
+        height: 30px;
+
+        background-color: rgba(245, 197, 7, .5);
     }
-    .player__line::after{
-        content: "";
+    .player__button::before {
+        position: relative;
+        top: 15px;
+        left: 10px;
+
         width: 10px;
         height: 10px;
         padding: 10px;
-        background-image: url("/assets/images/sound.png");
-        background-size: auto auto;
+
+        content: '';
+
+        background-image: url('/assets/images/play.png');
         background-repeat: no-repeat;
-        position:relative;
-        left:425px;
-        top:8px;
+        background-size: 10px 20px;
     }
-    
-    .left_button{
-       display: inline;
-       width:32px;
-       height: 57px; 
-       background-color: rgb(155, 125, 8, .9);
-       background-size: auto auto;
-       position: absolute;
-       top:300px;
-       left:1px;
-    }
-    .left_button::before{
-        content:"";
-        width:fit-content;
-        height: fit-content;
-        background-image: url("/assets/images/left.png");
-        background-size: auto auto;
-        padding: 10px;
-        background-repeat: no-repeat;
-        position: relative;
-        top:50%;
-        left:25%;
-    
-    }
-    .left_button:hover{
-        background-color: rgba(245, 197, 7);
+    .player__button:hover {
         opacity: 1;
+        background-color: rgba(245, 197, 7);
     }
-    .right_button{
-        display:inline;
-        width:32px;
-        height: 57px; 
+    .player__line {
+        display: inherit;
+
+        width: 150px;
+        height: 13px;
+
+        opacity: 1;
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+        background-color: rgb(255, 201, 24);
+    }
+    .player__line::after {
+        position: relative;
+        top: 8px;
+        left: 425px;
+
+        width: 10px;
+        height: 10px;
+        padding: 10px;
+
+        content: '';
+
+        background-image: url('/assets/images/sound.png');
+        background-repeat: no-repeat;
+        background-size: auto auto;
+    }
+
+    .left_button {
+        position: absolute;
+        top: 300px;
+        left: 1px;
+
+        display: inline;
+
+        width: 32px;
+        height: 57px;
+
         background-color: rgb(155, 125, 8, .9);
         background-size: auto auto;
-        position: absolute;
-        top:300px;
-        left:1268px;
     }
-    .right_button::before{
-        content:"";
-        width:fit-content;
-        height: fit-content;
-        background-image: url("/assets/images/right.png");
-        background-size: auto auto;
-        padding: 10px;
-        background-repeat: no-repeat;
+    .left_button::before {
         position: relative;
-        top:50%;
-        left:35%;
-    
+        top: 50%;
+        left: 25%;
+
+        width: fit-content;
+        height: fit-content;
+        padding: 10px;
+
+        content: '';
+
+        background-image: url('/assets/images/left.png');
+        background-repeat: no-repeat;
+        background-size: auto auto;
     }
-    .right_button:hover{
-        background-color: rgba(245, 197, 7);
+    .left_button:hover {
         opacity: 1;
+        background-color: rgba(245, 197, 7);
     }
-    .intro .round_button{
-        display:inherit;
+    .right_button {
+        position: absolute;
+        top: 300px;
+        left: 1268px;
+
+        display: inline;
+
+        width: 32px;
+        height: 57px;
+
+        background-color: rgb(155, 125, 8, .9);
+        background-size: auto auto;
+    }
+    .right_button::before {
+        position: relative;
+        top: 50%;
+        left: 35%;
+
+        width: fit-content;
+        height: fit-content;
+        padding: 10px;
+
+        content: '';
+
+        background-image: url('/assets/images/right.png');
+        background-repeat: no-repeat;
+        background-size: auto auto;
+    }
+    .right_button:hover {
+        opacity: 1;
+        background-color: rgba(245, 197, 7);
+    }
+    .intro .round_button {
+        display: inherit;
     }
 }
