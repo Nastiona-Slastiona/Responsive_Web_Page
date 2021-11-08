@@ -72,7 +72,7 @@ header .logo {
         display: inline;
 
         text-align: unset;
-
+        margin-right: 60px;
         padding-block: 30px;
         padding-inline: 0;
     }
