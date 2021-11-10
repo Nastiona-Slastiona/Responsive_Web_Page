@@ -228,7 +228,7 @@ footer .container{
     padding: 10px;
     opacity: 1;
     background-size: auto auto;
-    background-image: url("/assets/images/play.png");
+    background-image: url("../images/play.png");
     background-repeat: no-repeat;
     position: relative;
     top:40%;
