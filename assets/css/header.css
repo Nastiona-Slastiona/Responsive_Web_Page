@@ -1,6 +1,6 @@
 
 header {
-    display: block;
+    display: flex;
 
     width: 100%;
     max-height: min-content;
@@ -11,12 +11,11 @@ header {
 }
 @media (min-width: 650px) {
     .header {
-        display: flexbox;
-        justify-content: center;
+        display: flex;
+        justify-items: center;
 
         max-width: 100%;
-        padding-bottom: 30px;
-
+        
         background-image: url('../images/header.jpg');
         background-size: 100% 100%;
     }
@@ -35,12 +34,62 @@ header {
         justify-content: space-between;
     }
 }
+.header .container{
+    position: relative;
+    display: flex;
+
+}
 @media (min-width: 650px) {
     .header .cotainer {
         display: flex;
         position: relative;
+        width: 1020px;
+        left:0;
+        justify-content: center;
     }
 }
+/*      Logo        */
+header .logo {
+    padding-block: 10px;
+    padding-inline: 15px;
+}
+@media (max-width: 650px) {
+    header .logo {
+        background-color: rgb(56, 53, 53);
+        background-image:    -moz-linear-gradient( 90deg, rgb(46, 45, 45) 0%, rgb(91,91,91) 100%);
+        background-image: -webkit-linear-gradient( 90deg,  rgb(46, 45, 45) 0%, rgb(91,91,91) 100%);
+        background-image:     -ms-linear-gradient( 90deg,  rgb(46, 45, 45) 0%, rgb(91,91,91) 100%);
+    }
+}
+
+@media (min-width:650px) {
+    header .logo {
+        font-size: 41px;
+
+        display: inline;
+
+        text-align: unset;
+        margin-right: 60px;
+        padding-block: 30px;
+        padding-inline: 0;
+    }
+
+    header .logo::after {
+        font-family: 'LaoUI';
+        font-size: 13px;
+        font-weight: 50;
+        font-style: normal;
+        line-height: 1.2;
+
+        content: 'craft by css author.com';
+        text-align: center;
+        text-transform: uppercase;
+
+        color: rgba(255, 255, 255, .769);
+        text-shadow: none;
+    }
+}
+
 /*       Menu       */
 .menu {
     display: flex;
@@ -66,6 +115,7 @@ header {
     }
 }
 .menu__item {
+    display: inline;
     font-family: 'SegoeWP';
     font-size: 19px;
     font-weight: normal;
@@ -73,14 +123,12 @@ header {
     height: inherit;
     padding: 16px;
 
-
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
 
     color: rgb(155, 125, 8);
     border-right: 1px solid rgba(87, 82, 82, .247);
-
 }
 @media (min-width:650px) {
     .menu__item {
@@ -300,8 +348,7 @@ header {
 
     .left_button {
         position: absolute;
-        top: 300px;
-        
+        top: 30vh;
 
         display: inline;
 
@@ -332,8 +379,8 @@ header {
     }
     .right_button {
         position: absolute;
-        top: 300px;
-        left:98%;
+        top: 30vh;
+        left: 98.5%;
 
         display: inline;
 

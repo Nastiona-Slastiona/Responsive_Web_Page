@@ -16,12 +16,17 @@
 }
 @media (min-width: 650px) {
     .midbar {
+        display: flex;
+
         position: relative;
 
-        display: block;
-        padding-top: 0px;
-        padding-bottom: 0px;
+
+        padding-top: 0;
+        padding-bottom: 0;
+
         box-shadow: -3px 0 6px 3px rgba(19, 3, 3, .4);
+
+        
     }
 }
 .midbar__item {
@@ -31,10 +36,11 @@
 }
 @media (min-width:650px) {
     .midbar__item {
-        display: inline-block;
-        width:fit-content;
-        margin-block:25px ;
-        margin-inline: 10px;
+        display: inline;
+
+        width: fit-content;
+
+        margin-block: 5vh ;
     }
 }
 .midbar__item:hover {
@@ -46,8 +52,8 @@
 
     padding: 10px;
 }
-@media (min-width: 660px){
-    .midbar__icon img{
+@media (min-width: 660px) {
+    .midbar__icon img {
         width: auto;
         height: 74px;
     }
@@ -64,23 +70,28 @@
 
     color: rgb(14, 13, 13);
 }
-@media (min-width:650px){
-    .midbar__text{
+@media (min-width:650px) {
+    .midbar__text {
         font-size: 27px;
+
         width: 190px;
-       
-    } 
+    }
 }
 .midbar .container {
+    position: relative;
+
     display: flex;
     justify-content: space-around;
-    position: relative;
 
     width: 650px;
 }
 @media (min-width: 650px) {
     .midbar .container {
-        display: inline-flex;
+        position: relative;
+        left: 0vw;
+
+        display: flex;
+        justify-content: space-around;
 
         width: 1020px;
         height: 212px;

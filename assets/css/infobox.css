@@ -29,7 +29,7 @@
         display: grid;
         overflow: hidden;
         position: relative;
-        left:50%;
+        left:25vw;
 
         width: 1020px;
         height: 509px;

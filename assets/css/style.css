@@ -29,6 +29,7 @@ body {
     }
     .wrapper{
         position: relative;
+        max-width: 100%;
        
     }
     
@@ -47,8 +48,8 @@ body {
         width: 1020px;
         height: 570px; 
         position: relative;
-        left:10%;
-        margin-inline: 140px;
+        left:25vw;
+       
     }
 }
 /*      Logo      */
@@ -63,46 +64,6 @@ body {
 
     color: white;
     text-shadow: 0 2px 0 rgba(0, 0, 0, .42);
-}
-header .logo {
-    padding-block: 10px;
-    padding-inline: 15px;
-}
-@media (max-width: 650px) {
-    header .logo {
-        background-color: rgb(56, 53, 53);
-        background-image:    -moz-linear-gradient( 90deg, rgb(46, 45, 45) 0%, rgb(91,91,91) 100%);
-        background-image: -webkit-linear-gradient( 90deg,  rgb(46, 45, 45) 0%, rgb(91,91,91) 100%);
-        background-image:     -ms-linear-gradient( 90deg,  rgb(46, 45, 45) 0%, rgb(91,91,91) 100%);
-    }
-}
-
-@media (min-width:650px) {
-    header .logo {
-        font-size: 41px;
-
-        display: inline;
-
-        text-align: unset;
-        margin-right: 60px;
-        padding-block: 30px;
-        padding-inline: 0;
-    }
-
-    header .logo::after {
-        font-family: 'LaoUI';
-        font-size: 13px;
-        font-weight: 50;
-        font-style: normal;
-        line-height: 1.2;
-
-        content: 'craft by css author.com';
-        text-align: center;
-        text-transform: uppercase;
-
-        color: rgba(255, 255, 255, .769);
-        text-shadow: none;
-    }
 }
 
 .logo::before {
@@ -137,7 +98,7 @@ header .logo {
 
 /*      Footer      */
 footer {
-    display: block;
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -149,6 +110,8 @@ footer {
 }
 @media (min-width:660px) {
     footer{
+        position: relative;
+        display: flex;
         padding-top: 5px;
        
     }
@@ -164,7 +127,6 @@ footer .logo {
         font-size: 29px;
         display: inline;
         width: fit-content;
-        position: relative;
        
     }
 }
@@ -192,11 +154,15 @@ footer .logo::before {
     }
 }
 footer .container{
-    display: block;
+    position: relative;
+    display: flex;
+    justify-content: center;
     height: 43px;
 }
 @media (min-width:650px){
     footer .container{
+        position: relative;
+        left: 0vw;
         display: flex;
         justify-content: center;
         height: 64px;
