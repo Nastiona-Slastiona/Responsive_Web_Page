@@ -25,14 +25,16 @@ body {
 }
 @media (min-width:660px){
     body{
-        display: flexbox;
+        position: relative;
+        top:0;
+        left:0; 
         justify-content: center;
-    
     }
     .wrapper{
-       display: inherit;
-       justify-self: center;
+        position: relative;
+       
     }
+    
     
 }
 
@@ -40,6 +42,7 @@ body {
 .container {
     width: 660px;
     max-height: min-content;
+    
     margin-inline: 0px;
 }
 
