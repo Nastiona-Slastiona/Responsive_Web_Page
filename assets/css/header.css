@@ -308,7 +308,7 @@ header {
         height: 57px;
 
         background-color: rgb(155, 125, 8, .9);
-        background-size: auto auto;
+        background-size: 100% 100%;
     }
     .left_button::before {
         position: relative;
