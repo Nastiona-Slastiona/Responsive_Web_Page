@@ -9,7 +9,7 @@
     padding-bottom: 20px;
 
     background-color: white;
-    background-image: url('/assets/images/bckg_midbar.png');
+    background-image: url('../images/bckg_midbar.png');
     background-size: 100% 100%;
     box-shadow: 0 -3px 0 4px rgba(255, 255, 255, .5),0 -3px 0 9px rgba(255, 255, 255, .4),
     inset 0 -3px 0 4px rgba(255, 255, 255, .5), 0 -3px 0 9px rgba(255, 255, 255, .4);

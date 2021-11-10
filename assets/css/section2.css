@@ -9,7 +9,7 @@
 @media (min-width: 660px){
     .section2{
         display: block;
-        background-image: url("/assets/images/section2_bg.png");
+        background-image: url("../images/section2_bg.png");
 
     }
 }
@@ -26,7 +26,7 @@
     
         text-align: center;
     
-        background-image: url("/assets/images/section2_bg.png");
+        background-image: url("../images/section2_bg.png");
     
         gap: 40px;
         grid-template-columns: 1fr 1fr;
@@ -109,7 +109,7 @@ padding-left: 30px;
 @media (min-width:660px){
     .section2 ul {
         display:block;
-        list-style-image:url("/assets/images/list.png") ;
+        list-style-image:url("../images/list.png") ;
         align-self: start;
         list-style-position: outside;
         align-self: start;
@@ -177,7 +177,7 @@ padding-left: 30px;
     width: auto;
     height: auto;
 
-    background-image: url('/assets/images/computer.png');
+    background-image: url('../images/computer.png');
     background-repeat: no-repeat;
     background-size: auto auto;
 }
@@ -185,7 +185,7 @@ padding-left: 30px;
     width: auto;
     height: auto;
 
-    background-image: url('/assets/images/laptop.png');
+    background-image: url('../images/laptop.png');
     background-repeat: no-repeat;
     background-size: auto;
 }
@@ -193,7 +193,7 @@ padding-left: 30px;
     width: auto;
     height: auto;
 
-    background-image: url('/assets/images/phone.png');
+    background-image: url('../images/phone.png');
     background-repeat: no-repeat;
     background-size: auto;
 }

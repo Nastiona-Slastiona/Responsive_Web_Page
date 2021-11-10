@@ -15,7 +15,7 @@
         height: 509px;
 
         background-color: white;
-        background-image: url('/assets/images/infobox_bckg.jpg');
+        background-image: url('../images/infobox_bckg.jpg');
     }
 }
 .infobox .container {
@@ -156,7 +156,7 @@
     margin: 10px;
     margin-left: 0;
 
-    background-image: url('/assets/images/player_pic.png');
+    background-image: url('../images/player_pic.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
@@ -238,7 +238,7 @@
     width: 159px;
     height: 133px;
 
-    background-image: url('/assets/images/twit_bird.svg');
+    background-image: url('../images/twit_bird.svg');
     background-repeat: no-repeat;
     background-size: 159px 133px;
 }
@@ -300,7 +300,7 @@
     height: 42px;
     margin-bottom: 15px;
 
-    background-image: url('/assets/images/message.png');
+    background-image: url('../images/message.png');
     background-repeat: no-repeat;
     background-size: 284px 42px;
 }

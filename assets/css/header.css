@@ -17,7 +17,7 @@ header {
         max-width: 100%;
         padding-bottom: 30px;
 
-        background-image: url('/assets/images/header.jpg');
+        background-image: url('../images/header.jpg');
         background-size: 100% 100%;
     }
 }
@@ -166,7 +166,7 @@ header {
     width: 640px;
     height: 327px;
 
-    background: url('/assets/images/intro_02.png') top
+    background: url('../images/intro_02.png') top
     no-repeat;
     background-size: 100% 100%;
 }
@@ -262,7 +262,7 @@ header {
 
         content: '';
 
-        background-image: url('/assets/images/play.png');
+        background-image: url('../images/play.png');
         background-repeat: no-repeat;
         background-size: 10px 20px;
     }
@@ -292,7 +292,7 @@ header {
 
         content: '';
 
-        background-image: url('/assets/images/sound.png');
+        background-image: url('../images/sound.png');
         background-repeat: no-repeat;
         background-size: auto auto;
     }
@@ -321,7 +321,7 @@ header {
 
         content: '';
 
-        background-image: url('/assets/images/left.png');
+        background-image: url('../images/left.png');
         background-repeat: no-repeat;
         background-size: auto auto;
     }
@@ -353,7 +353,7 @@ header {
 
         content: '';
 
-        background-image: url('/assets/images/right.png');
+        background-image: url('../images/right.png');
         background-repeat: no-repeat;
         background-size: auto auto;
     }
