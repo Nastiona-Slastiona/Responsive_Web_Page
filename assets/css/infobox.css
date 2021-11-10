@@ -221,8 +221,7 @@
         line-height: 1.517;
 
         position: absolute;
-        z-index: 58;
-        top: 850px;
+        top: 890px;
         left: 1113px;
 
         display: inline;
@@ -395,7 +394,7 @@ form {
 @media (min-width: 650px) {
     .little-cross {
         position: absolute;
-        top: 1050px;
+        top: 1090px;
         left: 460px;
 
         width: 10px;
@@ -405,7 +404,7 @@ form {
     }
     .infobox__twitter .little-cross {
         position: absolute;
-        top: 1060px;
+        top: 1100px;
         left: 1140px;
 
         display: inline;

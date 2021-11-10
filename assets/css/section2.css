@@ -9,6 +9,7 @@
 @media (min-width: 650px){
     .section2{
         display: block;
+        height: 497px ;
         background-image: url("../images/section2_bg.png");
 
     }
@@ -22,7 +23,7 @@
         display: grid;
         align-items: center;
         padding-top: 10px ;
-        height: 466px ;
+        height: 497px ;
     
         text-align: center;
     
