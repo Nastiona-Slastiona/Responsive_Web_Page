@@ -11,7 +11,7 @@
         display: block;
         height: 497px ;
         background-image: url("../images/section2_bg.png");
-
+       
     }
 }
 .section2 .container {
@@ -22,13 +22,12 @@
         width:1020px;
         display: grid;
         align-items: center;
-        padding-top: 10px ;
+        padding-top: 10px;
         height: 497px ;
-    
+        position: relative;
         text-align: center;
     
-        background-image: url("../images/section2_bg.png");
-    
+          
         gap: 40px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 115px auto;
@@ -39,7 +38,7 @@
     font-size: 39px;
     font-weight: 500;
     line-height: 1.2;
-padding-left: 30px;
+    padding-left: 30px;
     text-transform: uppercase;
 
     color: rgb(245, 197, 6);

@@ -38,6 +38,7 @@ header {
 @media (min-width: 650px) {
     .header .cotainer {
         display: flex;
+        position: relative;
     }
 }
 /*       Menu       */
@@ -300,7 +301,7 @@ header {
     .left_button {
         position: absolute;
         top: 300px;
-        left: 1px;
+        left: -140px;
 
         display: inline;
 
@@ -332,7 +333,7 @@ header {
     .right_button {
         position: absolute;
         top: 300px;
-        left: 1268px;
+        left: 1128px;
 
         display: inline;
 

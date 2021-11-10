@@ -74,6 +74,7 @@
 .midbar .container {
     display: flex;
     justify-content: space-around;
+    position: relative;
 
     width: 650px;
 }
