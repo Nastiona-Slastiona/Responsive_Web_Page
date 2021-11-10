@@ -18,15 +18,16 @@ html {
 body {
     font-family: 'Lucida Sans', sans-serif;
     font-size: 20px;
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0;
 
     color: black;
 }
 @media (min-width:650px){
     body{
+        display: flex;
         justify-content: center;
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .wrapper{
         position: relative;
@@ -40,7 +41,6 @@ body {
 .container {
     width: 650px;
     max-height: min-content;
-    
     margin-inline: 0px;
 }
 
