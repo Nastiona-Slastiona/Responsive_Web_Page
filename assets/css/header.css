@@ -9,7 +9,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
-@media (min-width: 660px) {
+@media (min-width: 650px) {
     .header {
         display: flexbox;
         justify-content: center;
@@ -29,13 +29,13 @@ header {
 
     max-width: 100%;
 }
-@media (min-width:660px) {
+@media (min-width:650px) {
     .header__inner {
         display: flex;
         justify-content: space-between;
     }
 }
-@media (min-width: 660px) {
+@media (min-width: 650px) {
     .header .cotainer {
         display: flex;
     }
@@ -52,7 +52,7 @@ header {
 
     background-color: #eec006;
 }
-@media (min-width: 660px) {
+@media (min-width: 650px) {
     .menu {
         display: inline-flex;
 
@@ -81,7 +81,7 @@ header {
     border-right: 1px solid rgba(87, 82, 82, .247);
 
 }
-@media (min-width:660px) {
+@media (min-width:650px) {
     .menu__item {
         font-size: 17px;
 
@@ -114,7 +114,7 @@ header {
     background-repeat: no-repeat;
     background-size: 25px 25px;
 }
-@media (min-width: 660px) {
+@media (min-width: 650px) {
     .about_us::before {
         margin-left: 15px;
     }
@@ -150,7 +150,7 @@ header {
 .intro {
     display: block;
 }
-@media (min-width: 660px) {
+@media (min-width: 650px) {
     .intro {
         display: inline-flex;
         align-content: center;
@@ -163,7 +163,7 @@ header {
 .intro__image {
     display: block;
 
-    width: 640px;
+    width: 650px;
     height: 327px;
 
     background: url('../images/intro_02.png') top
@@ -171,7 +171,7 @@ header {
     background-size: 100% 100%;
 }
 
-@media (min-width:660px) {
+@media (min-width:650px) {
     .intro__image {
         width: 549px;
         height: 327px;
@@ -180,7 +180,7 @@ header {
 .intro__text span {
     display: none;
 }
-@media (min-width:660px) {
+@media (min-width:650px) {
     .intro__text span {
         font-family: 'Asap';
         font-size: 63px;
@@ -225,7 +225,7 @@ header {
 .intro .round_button {
     display: none;
 }
-@media (min-width:660px) {
+@media (min-width:650px) {
     .player {
         position: relative;
         top: 240px;

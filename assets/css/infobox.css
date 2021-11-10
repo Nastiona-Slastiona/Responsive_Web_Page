@@ -9,7 +9,7 @@
     grid-template-columns: 309px 335px;
     grid-template-rows: 252px 233px;
 }
-@media (min-width: 660px) {
+@media (min-width: 650px) {
     .infobox {
         max-width: 100%;
         height: 509px;
@@ -20,11 +20,10 @@
 }
 .infobox .container {
     display: inherit;
-
     width: 640px;
     height: 509px;
 }
-@media (min-width: 660px) {
+@media (min-width: 650px) {
     .infobox .container {
         display: grid;
         overflow: hidden;
@@ -52,7 +51,7 @@
     grid-column: 1/3;
     grid-row: 1;
 }
-@media (min-width: 660px) {
+@media (min-width: 650px) {
     .infobox__text {
         display: inline-flex;
 
@@ -80,7 +79,7 @@
     grid-column: 1;
     grid-row: 1;
 }
-@media (min-width: 660px) {
+@media (min-width: 650px) {
     .infobox__textbox {
         font-weight: 100;
 
@@ -106,7 +105,7 @@
 .infobox__date .text p {
     display: none;
 }
-@media (min-width: 660px) {
+@media (min-width: 650px) {
     .infobox__date {
         position: relative;
         top: 47px;
@@ -163,7 +162,7 @@
     grid-column: 2;
     grid-row: 1;
 }
-@media (min-width: 660px) {
+@media (min-width: 650px) {
     .infobox__player {
         display: inline;
 
@@ -191,7 +190,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
 }
-@media (min-width: 660px) {
+@media (min-width: 650px) {
     .infobox__messages {
         display: none;
     }
@@ -209,7 +208,7 @@
 .infobox__twitter p {
     display: none;
 }
-@media (min-width: 660px) {
+@media (min-width: 650px) {
     .infobox__twitter {
         background-color: #ec9e03 ;
 
@@ -242,7 +241,7 @@
     background-repeat: no-repeat;
     background-size: 159px 133px;
 }
-@media (min-width: 660px) {
+@media (min-width: 650px) {
     .twitter__bird {
         margin-inline: 90px;
         margin-block: 50px;
@@ -251,7 +250,7 @@
 .infobox__scroll {
     display: none;
 }
-@media (min-width: 660px) {
+@media (min-width: 650px) {
     .infobox__scroll {
         position: relative;
         top: 125px;
@@ -274,7 +273,7 @@
 .scroll {
     display: none;
 }
-@media (min-width: 660px) {
+@media (min-width: 650px) {
     .scroll {
         position: relative;
         top: 125px;
@@ -393,7 +392,7 @@ form {
 .infobox__twitter .little-cross {
     display: none;
 }
-@media (min-width: 660px) {
+@media (min-width: 650px) {
     .little-cross {
         position: absolute;
         top: 1050px;
