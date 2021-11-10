@@ -1,0 +1,233 @@
+@import url("./fonts.css");
+@import url("./header.css");
+@import url("./midbar.css");
+@import url("./infobox.css");
+@import url("./section2.css");
+
+html {
+    box-sizing: border-box;
+}
+*
+,
+*::before
+,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 20px;
+
+    margin: 0;
+
+    color: black;
+}
+@media (min-width:660px){
+    body{
+        display: grid;
+        grid-template-columns: 1300px;
+    }
+}
+
+/*      Container       */
+.container {
+    width: 660px;
+    max-height: min-content;
+    margin-inline: 0px;
+}
+
+@media (min-width: 660px) {
+    .container {
+        width: 1020px;
+        height: 570px;
+
+        margin-inline: 140px;
+    }
+}
+/*      Logo      */
+.logo {
+    font-family: 'Lucida Sans';
+    font-size: 100%;
+    font-weight: 100;
+    font-style: italic;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: white;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, .42);
+}
+header .logo {
+    padding-block: 10px;
+    padding-inline: 15px;
+}
+@media (max-width: 660px) {
+    header .logo {
+        background-color: rgb(56, 53, 53);
+        background-image:    -moz-linear-gradient( 90deg, rgb(46, 45, 45) 0%, rgb(91,91,91) 100%);
+        background-image: -webkit-linear-gradient( 90deg,  rgb(46, 45, 45) 0%, rgb(91,91,91) 100%);
+        background-image:     -ms-linear-gradient( 90deg,  rgb(46, 45, 45) 0%, rgb(91,91,91) 100%);
+    }
+}
+
+@media (min-width:660px) {
+    header .logo {
+        font-size: 41px;
+
+        display: inline;
+
+        text-align: unset;
+        margin-right: 60px;
+        padding-block: 30px;
+        padding-inline: 0;
+    }
+
+    header .logo::after {
+        font-family: 'LaoUI';
+        font-size: 13px;
+        font-weight: 50;
+        font-style: normal;
+        line-height: 1.2;
+
+        content: 'craft by css author.com';
+        text-align: center;
+        text-transform: uppercase;
+
+        color: rgba(255, 255, 255, .769);
+        text-shadow: none;
+    }
+}
+
+.logo::before {
+    display: inline-flex;
+
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+
+    content: '';
+
+    background-image: url('../images/logo.svg');
+    background-repeat: no-repeat;
+    background-size: 45px 45px;
+
+    padding-block: 15px;
+}
+@media (min-width:660px) {
+    .logo::before {
+        display: inline-flex;
+
+        width: 100px;
+        height: 100px;
+
+        content: '';
+
+        background-size: 100px 100px;
+
+        padding-block: 35px;
+    }
+}
+
+/*      Footer      */
+footer {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+
+    background-color: #4c4c4c ;
+    box-shadow: 0 -3px 10px 2px rgb(31, 29, 29);
+}
+footer .logo {
+    font-size: 19px;
+    display: inline;
+    width: fit-content;
+}
+@media (min-width:660px){
+    footer .logo {
+        font-size: 29px;
+        display: inline;
+        width: fit-content;
+        position: relative;
+       
+    }
+}
+
+footer .logo::before {
+    display: inline-flex;
+
+    width: 31px;
+    height: 31px;
+
+    background-size: 100% 100%;
+    margin-top: 5px;
+    padding-block: 8px;
+}
+@media (min-width: 660px){
+    footer .logo::before {
+        display: inline-flex;
+        margin-top: 5px;
+        width: 52px;
+        height: 52px;
+    
+        background-size: 100% 100%;
+    
+        padding-block: 17px;
+    }
+}
+footer .container{
+    display: block;
+    height: 43px;
+}
+@media (min-width:660px){
+    footer .container{
+        display: flex;
+        justify-content: center;
+        height: 64px;
+    }
+    footer .logo::after{
+        content:"Designed by cssauthor.com";
+        display: inline-flex;
+        font-size: 17px;
+        font-family: "Open Sans";
+        text-transform: none;
+        font-style: normal;
+        color: rgb(255, 255, 255);
+        height: 17px;
+        width: fit-content;
+        position: relative;
+        left:290px;
+    } 
+}
+/*      Round button    */
+.round_button{
+    width:61px;
+    height:61px;
+    background-color: rgba(245, 197, 7, 0.8);
+    border-radius: 50%;
+    position: relative;
+    top:44%;
+    left: 40%;
+
+}
+.round_button::before{
+    content:"";
+    width:30px;
+    height: 30px;
+    padding: 10px;
+    opacity: 1;
+    background-size: auto auto;
+    background-image: url("/assets/images/play.png");
+    background-repeat: no-repeat;
+    position: relative;
+    top:40%;
+    left:39%;
+}
+.round_button:hover{
+    background-color: rgba(245, 197, 7);
+    opacity: 1;
+
+}
