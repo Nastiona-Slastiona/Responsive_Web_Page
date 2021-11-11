@@ -12,9 +12,9 @@
     background-image: url('../images/bckg_midbar.png');
     background-size: 100% 100%;
     box-shadow: 0 -3px 0 4px rgba(255, 255, 255, .5),0 -3px 0 9px rgba(255, 255, 255, .4),
-    inset 0 -3px 0 4px rgba(255, 255, 255, .5), 0 -3px 0 9px rgba(255, 255, 255, .4);
+    inset 0 -3px 0 4px rgba(255, 255, 255, .5), inset 0 -3px 0 9px rgba(255, 255, 255, .4);
 }
-@media (min-width: 650px) {
+@media (min-width: 1020px) {
     .midbar {
         display: flex;
 
@@ -34,7 +34,7 @@
 
     transition: 1s;
 }
-@media (min-width:650px) {
+@media (min-width:1020px) {
     .midbar__item {
         display: inline;
 
@@ -52,7 +52,7 @@
 
     padding: 10px;
 }
-@media (min-width: 660px) {
+@media (min-width: 1020px) {
     .midbar__icon img {
         width: auto;
         height: 74px;
@@ -70,7 +70,7 @@
 
     color: rgb(14, 13, 13);
 }
-@media (min-width:650px) {
+@media (min-width:1020px) {
     .midbar__text {
         font-size: 27px;
 
@@ -82,10 +82,10 @@
 
     display: flex;
     justify-content: space-around;
-
-    width: 650px;
+    height: fit-content;
+    width: 100%;
 }
-@media (min-width: 650px) {
+@media (min-width: 1020px) {
     .midbar .container {
         position: relative;
         left: 0vw;

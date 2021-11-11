@@ -1,59 +1,79 @@
-
 header {
     display: flex;
 
     width: 100%;
-    max-height: min-content;
-
+    height: max-content;
+    justify-content: center;
     background-image: url('../images/header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+
 }
-@media (min-width: 650px) {
+
+@media (min-width: 700px) {
     .header {
         display: flex;
-        justify-items: center;
 
-        max-width: 100%;
-        
+        max-width: max-content;
+
         background-image: url('../images/header.jpg');
         background-size: 100% 100%;
+
+        justify-items: center;
     }
 }
 
-.header__inner {
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-around;
-
-    max-width: 100%;
+.header .container {
+    position: relative;
+    width:100%;
+    display: flex;
 }
-@media (min-width:650px) {
+
+@media (min-width: 1020px) {
+    .header .container {
+        position: relative;
+        display: flex;
+
+        width: 100%;
+    }
+}
+.header__inner {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    transition: 1s;
+}
+
+@media (min-width:700px) {
+    .header__inner{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+}
+@media (min-width:1020px) {
     .header__inner {
         display: flex;
         justify-content: space-between;
+        width:100%;
+        margin-block: 30px;
+        height: max-content;
+        align-content: center;
     }
 }
-.header .container{
-    position: relative;
-    display: flex;
 
-}
-@media (min-width: 650px) {
-    .header .cotainer {
-        display: flex;
-        position: relative;
-        width: 1020px;
-        left:0;
-        justify-content: center;
-    }
-}
 /*      Logo        */
 header .logo {
+    display: flex;
+    width: max-content;
+    background-size: 100% 100%;
+    height: 65px;
     padding-block: 10px;
     padding-inline: 15px;
+    transition: 1s;
 }
-@media (max-width: 650px) {
+@media (max-width: 700px) {
     header .logo {
         background-color: rgb(56, 53, 53);
         background-image:    -moz-linear-gradient( 90deg, rgb(46, 45, 45) 0%, rgb(91,91,91) 100%);
@@ -61,20 +81,26 @@ header .logo {
         background-image:     -ms-linear-gradient( 90deg,  rgb(46, 45, 45) 0%, rgb(91,91,91) 100%);
     }
 }
-
-@media (min-width:650px) {
+@media (min-width:700px) {
+    .header .logo{
+        display: flex;
+        justify-content: space-between;
+        width: fit-content;
+    }
+    
+}
+@media (min-width:1020px) {
     header .logo {
         font-size: 41px;
-
-        display: inline;
-
-        text-align: unset;
-        margin-right: 60px;
-        padding-block: 30px;
-        padding-inline: 0;
+        display: flex;
+        text-align: center;
+        height: fit-content;
+        width: fit-content;
+        align-self: center;
     }
 
     header .logo::after {
+        align-self: flex-end;
         font-family: 'LaoUI';
         font-size: 13px;
         font-weight: 50;
@@ -90,35 +116,44 @@ header .logo {
     }
 }
 
+@media (min-width:1020px){
+    .header .logo::before{
+        display: inline;
+    }
+}
+
 /*       Menu       */
 .menu {
     display: flex;
-    justify-content: space-around;
-
-    width: max-content;
+    width: 100%;
+    justify-content: space-between;
     height: 65px;
-    margin: 0;
-    padding: 0;
-
+    transition: 1s;
     background-color: #eec006;
 }
-@media (min-width: 650px) {
-    .menu {
-        display: inline-flex;
 
+@media (min-width: 700px) {
+    .menu {
+        display: flex;
         width: max-content;
+    }
+}
+@media (min-width: 1020px) {
+    .menu {
+        display: flex;
+        align-self: center;
+        width: fit-content;
         height: 41px;
-        margin: 0 auto;
-        padding: 0;
 
         box-shadow: -3px -3px 0 1px rgb(245, 197, 6, .3),-6px -6px 0 2px rgb(245, 197, 6, .3);
     }
 }
 .menu__item {
-    display: inline;
     font-family: 'SegoeWP';
-    font-size: 19px;
+    font-size: 0.8em;
     font-weight: normal;
+  
+    display: inline;
 
     height: inherit;
     padding: 16px;
@@ -126,19 +161,24 @@ header .logo {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-
+    width: max-content;
     color: rgb(155, 125, 8);
     border-right: 1px solid rgba(87, 82, 82, .247);
 }
-@media (min-width:650px) {
+@media (min-width:610px){
+    .menu__item{
+        font-size: 1em;
+        display: flex;
+    }
+}
+@media (min-width:700px) {
     .menu__item {
-        font-size: 17px;
+        font-size: 0.9em;
 
         display: flex;
         align-items: center;
 
         width: max-content;
-        padding: 15px;
 
         padding-inline-end: 20px ;
     }
@@ -163,7 +203,7 @@ header .logo {
     background-repeat: no-repeat;
     background-size: 25px 25px;
 }
-@media (min-width: 650px) {
+@media (min-width: 700px) {
     .about_us::before {
         margin-left: 15px;
     }
@@ -198,38 +238,64 @@ header .logo {
 /*      Intro       */
 .intro {
     display: block;
+    width:100%;
+    transition: 1s;
 }
-@media (min-width: 650px) {
+@media (min-width: 700px) {
     .intro {
         display: inline-flex;
         align-content: center;
         justify-content: center;
+        width:90%;
+    }
+}
+@media (min-width: 1020px) {
+    .intro {
+        display: inline-flex;
+        align-self: center;
+        justify-self: center;
+        margin-left: 20px;
+        width:100%;
 
-        margin-top: 20px;
-        margin-left: 10px;
+        /* margin-top: 20px;
+        margin-left: 10px; */
     }
 }
 .intro__image {
     display: block;
 
-    width: 650px;
+    width: 100%;
     height: 327px;
 
     background: url('../images/intro_02.png') top
     no-repeat;
     background-size: 100% 100%;
 }
-
-@media (min-width:650px) {
+@media (min-width:700px) {
     .intro__image {
-        width: 549px;
+        position: relative;
+        top:50px;
+        display: flex;
+        align-self: center;
+        width: 80%;
+        justify-self: center;
         height: 327px;
+    }
+}
+@media (min-width:1020px) {
+    .intro__image {
+        position: relative;
+        top:0px;
+        display: flex;
+        width: 100%;
+        min-height: max-content;
+        justify-self: center;
     }
 }
 .intro__text span {
     display: none;
 }
-@media (min-width:650px) {
+@media (min-width:1020px) {
     .intro__text span {
         font-family: 'Asap';
         font-size: 63px;
@@ -274,11 +340,11 @@ header .logo {
 .intro .round_button {
     display: none;
 }
-@media (min-width:650px) {
+@media (min-width:1020px) {
     .player {
         position: relative;
-        top: 240px;
-        left: 70px;
+        top: 90%;
+        left:-5%;
 
         display: inherit;
 
@@ -290,30 +356,30 @@ header .logo {
     }
     .player__button {
         position: relative;
-        top: -25px;
-        left: -40px;
+        top: -25%;
+        left: -43%;
 
         display: inherit;
 
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
 
         background-color: rgba(245, 197, 7, .5);
     }
     .player__button::before {
         position: relative;
-        top: 15px;
-        left: 10px;
+        display:flex;
+        top: 20%;
+        left: 20%;
 
-        width: 10px;
-        height: 10px;
-        padding: 10px;
+        width: 50%;
+        height: 50%;
 
         content: '';
 
         background-image: url('../images/play.png');
         background-repeat: no-repeat;
-        background-size: 10px 20px;
+        background-size: 100% 100%;
     }
     .player__button:hover {
         opacity: 1;
@@ -332,8 +398,8 @@ header .logo {
     }
     .player__line::after {
         position: relative;
-        top: 8px;
-        left: 425px;
+        top: 0%;
+        left: 275%;
 
         width: 10px;
         height: 10px;
@@ -347,8 +413,9 @@ header .logo {
     }
 
     .left_button {
-        position: absolute;
-        top: 30vh;
+        position: relative;
+        top: 15em;
+        left: -16%;
 
         display: inline;
 
@@ -411,5 +478,8 @@ header .logo {
     }
     .intro .round_button {
         display: inherit;
+    }
+    .intro .round_button::before{
+        top:25%;
     }
 }
