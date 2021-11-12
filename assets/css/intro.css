@@ -1,0 +1,246 @@
+/*      Intro       */
+.intro {
+    display: block;
+    width:100%;
+    transition: 1s;
+}
+@media (min-width: 700px) {
+    .intro {
+        display: inline-flex;
+        align-content: center;
+        justify-content: center;
+        width:90%;
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 1020px) {
+    .intro {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap:90px;
+        margin-left: 20px;
+        width:100%;
+        justify-content: space-between;
+
+    }
+}
+.intro__image {
+    display: block;
+
+    width: 100%;
+    height: 327px;
+
+    background: url('../images/intro_02.png')
+    no-repeat;
+    background-size: 100% 100%;
+}
+@media (min-width:700px) {
+    .intro__image {
+        display: flex;
+        align-self: center;
+        width: 80%;
+        justify-self: center;
+        height: 327px;
+    }
+}
+@media (min-width:1020px) {
+    .intro__image {
+        position: relative;
+        top:0px;
+        display: flex;
+        width: 553px;
+        min-height: max-content;
+        justify-self: center;
+    }
+}
+.intro__text span {
+    display: none;
+}
+@media (min-width:1020px) {
+    .intro__text span {
+        font-family: 'Asap';
+        font-size: 63px;
+        line-height: 1.2;
+
+  
+        display: inline-block;
+        visibility: visible;
+
+        width: auto;
+        padding-top: 20%;
+
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+.player {
+    display: none;
+}
+.player__button {
+    display: none;
+}
+
+.player__line {
+    display: none;
+}
+
+.firstLine {
+    color: rgb(245, 197, 6);
+}
+.secondLine {
+    color: white;
+}
+
+.left_button {
+    display: none;
+}
+
+.right_button {
+    display: none;
+}
+.intro .round_button {
+    display: none;
+}
+@media (min-width:1020px) {
+    .player {
+        position: relative;
+        top: 90%;
+        left:5%;
+
+        display: inherit;
+
+        width: 403px;
+        height: 13px;
+
+        border-radius: 7px ;
+        background-color: rgb(155, 125, 8, .7);
+    }
+    .player__button {
+        position: relative;
+        top: -25%;
+        left: -49%;
+
+        display: inherit;
+
+        width: 20px;
+        height: 20px;
+
+        background-color: rgba(245, 197, 7, .5);
+    }
+    .player__button::before {
+        position: relative;
+        display:flex;
+        top: 20%;
+        left: 20%;
+
+        width: 50%;
+        height: 50%;
+
+        content: '';
+
+        background-image: url('../images/play.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .player__button:hover {
+        opacity: 1;
+        background-color: rgba(245, 197, 7);
+    }
+    .player__line {
+        display: inherit;
+
+        width: 150px;
+        height: 13px;
+
+        opacity: 1;
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+        background-color: rgb(255, 201, 24);
+    }
+    .player__line::after {
+        position: relative;
+        top: 0%;
+        left: 275%;
+
+        width: 10px;
+        height: 10px;
+        padding: 10px;
+
+        content: '';
+
+        background-image: url('../images/sound.png');
+        background-repeat: no-repeat;
+        background-size: auto auto;
+    }
+
+    .left_button {
+        position: relative;
+        top: 15em;
+        left: -16%;
+
+        display: inline;
+
+        width: 32px;
+        height: 57px;
+
+        background-color: rgb(155, 125, 8, .9);
+        background-size: 100% 100%;
+    }
+    .left_button::before {
+        position: relative;
+        top: 50%;
+        left: 25%;
+
+        width: fit-content;
+        height: fit-content;
+        padding: 10px;
+
+        content: '';
+
+        background-image: url('../images/left.png');
+        background-repeat: no-repeat;
+        background-size: auto auto;
+    }
+    .left_button:hover {
+        opacity: 1;
+        background-color: rgba(245, 197, 7);
+    }
+    .right_button {
+        position: absolute;
+        top: 30vh;
+        left: 98.5%;
+
+        display: inline;
+
+        width: 32px;
+        height: 57px;
+
+        background-color: rgb(155, 125, 8, .9);
+        background-size: auto auto;
+    }
+    .right_button::before {
+        position: relative;
+        top: 50%;
+        left: 35%;
+
+        width: fit-content;
+        height: fit-content;
+        padding: 10px;
+
+        content: '';
+
+        background-image: url('../images/right.png');
+        background-repeat: no-repeat;
+        background-size: auto auto;
+    }
+    .right_button:hover {
+        opacity: 1;
+        background-color: rgba(245, 197, 7);
+    }
+    .intro .round_button {
+        display: inherit;
+    }
+    .intro .round_button::before{
+        top:25%;
+    }
+}

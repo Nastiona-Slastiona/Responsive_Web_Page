@@ -1,0 +1,91 @@
+/*      Footer      */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+
+    background-color: #4c4c4c ;
+    box-shadow: 0 -3px 10px 2px rgb(31, 29, 29);
+}
+@media (min-width:700px) {
+    footer{
+        position: relative;
+        display: flex;
+        padding-top: 5px;
+       
+    }
+    
+}
+footer .logo{
+    display: flex;
+    align-self: center;
+    padding-bottom: 1%;
+}
+footer .logo__text {
+    font-size: 19px;
+    display: inline;
+    width: fit-content;
+}
+@media (min-width:1020px){
+    footer .logo__text {
+        font-size: 29px;
+        display: inline;
+        width: fit-content;
+       
+    }
+}
+
+footer .logo__img {
+    display: inline-flex;
+
+    width: 31px;
+    height: 31px;
+
+    background-size: 100% 100%;
+    margin-top: 5px;
+    padding-block: 8px;
+}
+@media (min-width: 1020px){
+    footer .logo__img {
+        display: inline-flex;
+        margin-top: 5px;
+        width: 52px;
+        height: 52px;
+    
+        background-size: 100% 100%;
+    
+        padding-block: 17px;
+    }
+}
+footer .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 43px;
+}
+@media (min-width:1020px){
+    footer .container{
+        position: relative;
+        left: 0vw;
+        display: flex;
+        justify-content: center;
+        height: 64px;
+       
+    }
+    footer .logo::after{
+        content:"Designed by cssauthor.com";
+        display: inline-flex;
+        font-size: 17px;
+        font-family: "Open Sans";
+        text-transform: none;
+        font-style: normal;
+        color: rgb(255, 255, 255);
+        height: 17px;
+        width: fit-content;
+        position: relative;
+        left:290px;
+    } 
+}
