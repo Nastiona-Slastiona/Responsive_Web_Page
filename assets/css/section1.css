@@ -54,7 +54,7 @@
         display: flex;
         justify-content: space-between;
         width:100%;
-        margin-block: 30px;
+        margin-block: 3em;
         height: max-content;
         align-content: center;
     }

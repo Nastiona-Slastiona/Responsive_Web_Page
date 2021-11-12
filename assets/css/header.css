@@ -82,7 +82,7 @@ header .logo {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    height: 65px;
+    height: 3.25em;
     transition: 1s;
     background-color: #eec006;
 }
@@ -98,7 +98,7 @@ header .logo {
         display: flex;
         align-self: center;
         width: fit-content;
-        height: 41px;
+        height: 2em;
 
         box-shadow: -3px -3px 0 1px rgb(245, 197, 6, .3),-6px -6px 0 2px rgb(245, 197, 6, .3);
     }
@@ -111,7 +111,8 @@ header .logo {
     display: inline;
 
     height: inherit;
-    padding: 16px;
+    padding:.5em;
+   
 
     text-align: center;
     text-decoration: none;
@@ -124,6 +125,8 @@ header .logo {
     .menu__item{
         font-size: 1em;
         display: flex;
+        padding: 1em;
+       
     }
 }
 @media (min-width:700px) {
@@ -135,7 +138,7 @@ header .logo {
 
         width: max-content;
 
-        padding-inline-end: 20px ;
+        padding-inline-end: 1em;
     }
 }
 
@@ -150,43 +153,53 @@ header .logo {
 
     width: 25px;
     height: 25px;
-    margin-right: 10px;
+    margin-right: 0.3em;
 
     content: '';
 
     background-image: url('../images/aboutus.svg');
     background-repeat: no-repeat;
     background-size: 25px 25px;
-}
-@media (min-width: 700px) {
-    .about_us::before {
-        margin-left: 15px;
-    }
+    transition: 2s;
 }
 .services::before {
     display: inline-flex;
-
+    
     width: 25px;
     height: 25px;
-    margin-right: 10px;
-
+    margin-right: .1em;
+    
     content: '';
-
+    
     background-image: url('../images/services.svg');
     background-repeat: no-repeat;
     background-size: 25px 25px;
+    transition: 2s;
 }
 .contact::before {
     display: inline-flex;
-
+    
     width: 25px;
     height: 25px;
-    margin-right: 10px;
-
+    margin-right: .3em;
+    
     content: '';
-
+    
     background-image: url('../images/contact.svg');
     background-repeat: no-repeat;
     background-size: 25px 25px;
+    transition: 2s;
+}
+@media (min-width: 700px) {
+    .about_us::before {
+        margin-left: 1em;
+        margin-right: .5em;
+    }
+    .services::before{
+        margin-right: .5em;
+    }
+    .contact::before{
+        margin-right: .5em;
+    }
 }
 
