@@ -4,10 +4,7 @@
     display:flex;
     align-items: center;
     justify-content: space-around;
-
-    padding-top: 30px;
-    padding-bottom: 20px;
-
+    padding-block: 1em;
     background-color: white;
     background-image: url('../images/bckg_midbar.png');
     background-size: 100% 100%;
@@ -19,11 +16,7 @@
         display: flex;
 
         position: relative;
-
-
-        padding-top: 0;
-        padding-bottom: 0;
-
+        padding-block: 0em;
         box-shadow: -3px 0 6px 3px rgba(19, 3, 3, .4);
 
         
@@ -31,7 +24,6 @@
 }
 .midbar__item {
     display: inline;
-
     transition: 1s;
 }
 @media (min-width:1020px) {
