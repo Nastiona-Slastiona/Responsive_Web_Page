@@ -1,17 +1,19 @@
 header {
     display: flex;
+    justify-content: space-between;
 
     width: 100%;
     height: fit-content;
-    justify-content: space-between;
-    box-shadow: 0px 3px 2px 2px rgb(46, 45, 45);
 
+    box-shadow: 0 3px 2px 2px rgb(46, 45, 45);
 }
 @media (min-width: 700px) {
     header {
         display: flex;
-        width:100%;
+
+        width: 100%;
         height: max-content;
+
         box-shadow: none;
     }
 }
@@ -20,12 +22,16 @@ header {
 /*      Logo        */
 header .logo {
     display: flex;
+
     width: max-content;
-    background-size: 100% 100%;
     height: 65px;
+
+    transition: 1s;
+
+    background-size: 100% 100%;
+
     padding-block: 10px;
     padding-inline: 15px;
-    transition: 1s;
 }
 @media (max-width: 700px) {
     header .logo {
@@ -36,31 +42,36 @@ header .logo {
     }
 }
 @media (min-width:700px) {
-    .header .logo{
+    .header .logo {
         display: flex;
         justify-content: space-between;
+
         width: fit-content;
     }
-    
 }
+
 @media (min-width:1020px) {
     header .logo__text {
         font-size: 41px;
+
         display: flex;
-        text-align: center;
-        height: fit-content;
-        width: fit-content;
         align-self: center;
+
+        width: fit-content;
+        height: fit-content;
         padding-left: 0;
+
+        text-align: center;
     }
 
     header .logo::after {
-        align-self: flex-end;
         font-family: 'LaoUI';
         font-size: 13px;
         font-weight: 50;
         font-style: normal;
         line-height: 1.2;
+
+        align-self: flex-end;
 
         content: 'craft by css author.com';
         text-align: center;
@@ -71,8 +82,8 @@ header .logo {
     }
 }
 
-@media (min-width:1020px){
-    .header .logo__img{
+@media (min-width:1020px) {
+    .header .logo__img {
         display: flex;
     }
 }
@@ -80,16 +91,20 @@ header .logo {
 /*       Menu       */
 .menu {
     display: flex;
-    width: 100%;
     justify-content: space-between;
+
+    width: 100%;
     height: 3.25em;
+
     transition: 1s;
+
     background-color: #eec006;
 }
 
 @media (min-width: 700px) {
     .menu {
         display: flex;
+
         width: max-content;
     }
 }
@@ -97,6 +112,7 @@ header .logo {
     .menu {
         display: flex;
         align-self: center;
+
         width: fit-content;
         height: 2em;
 
@@ -105,33 +121,34 @@ header .logo {
 }
 .menu__item {
     font-family: 'SegoeWP';
-    font-size: 0.8em;
+    font-size: .8em;
     font-weight: normal;
-  
+
     display: inline;
 
+    width: max-content;
     height: inherit;
-    padding:.5em;
-   
+    padding: .5em;
 
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    width: max-content;
+
     color: rgb(155, 125, 8);
     border-right: 1px solid rgba(87, 82, 82, .247);
 }
-@media (min-width:610px){
-    .menu__item{
+@media (min-width:610px) {
+    .menu__item {
         font-size: 1em;
+
         display: flex;
+
         padding: 1em;
-       
     }
 }
 @media (min-width:700px) {
     .menu__item {
-        font-size: 0.9em;
+        font-size: .9em;
 
         display: flex;
         align-items: center;
@@ -153,52 +170,52 @@ header .logo {
 
     width: 25px;
     height: 25px;
-    margin-right: 0.3em;
+    margin-right: .3em;
 
     content: '';
+    transition: 2s;
 
     background-image: url('../images/aboutus.svg');
     background-repeat: no-repeat;
     background-size: 25px 25px;
-    transition: 2s;
 }
 .services::before {
     display: inline-flex;
-    
+
     width: 25px;
     height: 25px;
     margin-right: .1em;
-    
+
     content: '';
-    
+    transition: 2s;
+
     background-image: url('../images/services.svg');
     background-repeat: no-repeat;
     background-size: 25px 25px;
-    transition: 2s;
 }
 .contact::before {
     display: inline-flex;
-    
+
     width: 25px;
     height: 25px;
     margin-right: .3em;
-    
+
     content: '';
-    
+    transition: 2s;
+
     background-image: url('../images/contact.svg');
     background-repeat: no-repeat;
     background-size: 25px 25px;
-    transition: 2s;
 }
 @media (min-width: 700px) {
     .about_us::before {
+        margin-right: .5em;
         margin-left: 1em;
+    }
+    .services::before {
         margin-right: .5em;
     }
-    .services::before{
-        margin-right: .5em;
-    }
-    .contact::before{
+    .contact::before {
         margin-right: .5em;
     }
 }

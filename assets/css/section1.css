@@ -1,9 +1,10 @@
-.section1{
+.section1 {
     display: flex;
+    justify-content: center;
 
     width: 100%;
     height: max-content;
-    justify-content: center;
+
     background-image: url('../images/header.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -11,54 +12,63 @@
 @media (min-width: 700px) {
     .section1 {
         display: flex;
-        width:100%;
+
+        width: 100%;
         max-width: 100%;
 
         background-image: url('../images/header.jpg');
         background-size: 100% 100%;
-
 
         justify-items: center;
     }
 }
 .section1 .container {
     position: relative;
-    width:100%;
-    min-height: 100%;
+
     display: block;
+
+    width: 100%;
+    min-height: 100%;
 }
 
 @media (min-width: 1020px) {
     .section1 .container {
         position: relative;
+
         display: block;
 
         width: fit-content;
     }
 }
-.section1__inner{
+.section1__inner {
     display: flex;
+
     width: 100%;
     height: max-content;
+
     transition: 1s;
 }
 @media (min-width:700px) {
-    .section1__inner{
+    .section1__inner {
         display: flex;
+
         width: 100%;
     }
-    
 }
 @media (min-width:1020px) {
     .section1__inner {
         display: flex;
-        justify-content: space-between;
-        width:100%;
-        margin-block: 3em;
-        height: max-content;
         align-content: center;
+        justify-content: space-between;
+
+        width: 100%;
+        height: max-content;
+
+        margin-block: 3em;
     }
 }
+
+/*      Buttons     */
 .left_button {
     display: none;
 }
@@ -69,7 +79,7 @@
 @media (min-width:1100px) {
     .leftButton {
         position: absolute;
-        top:16em;
+        top: 16em;
 
         display: inline;
 
@@ -130,5 +140,4 @@
         opacity: 1;
         background-color: rgba(245, 197, 7);
     }
-    
 }

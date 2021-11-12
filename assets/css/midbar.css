@@ -1,29 +1,54 @@
 /*      Midbar      */
 .midbar {
     position: relative;
-    display:flex;
+
+    display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-block: 1em;
+    
     background-color: white;
     background-image: url('../images/bckg_midbar.png');
     background-size: 100% 100%;
     box-shadow: 0 -3px 0 4px rgba(255, 255, 255, .5),0 -3px 0 9px rgba(255, 255, 255, .4),
     inset 0 -3px 0 4px rgba(255, 255, 255, .5), inset 0 -3px 0 9px rgba(255, 255, 255, .4);
+    
+    padding-block: 1em;
 }
 @media (min-width: 1020px) {
     .midbar {
-        display: flex;
-
         position: relative;
-        padding-block: 0em;
-        box-shadow: -3px 0 6px 3px rgba(19, 3, 3, .4);
-
         
+        display: flex;
+        
+        box-shadow: -3px 0 6px 3px rgba(19, 3, 3, .4);
+        
+        padding-block: 0;
+    }
+}
+.midbar .container {
+    position: relative;
+
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+    height: fit-content;
+}
+@media (min-width: 1020px) {
+    .midbar .container {
+        position: relative;
+        left: 0vw;
+
+        display: flex;
+        justify-content: space-around;
+
+        width: 1020px;
+        height: 212px;
     }
 }
 .midbar__item {
     display: inline;
+
     transition: 1s;
 }
 @media (min-width:1020px) {
@@ -33,23 +58,22 @@
         width: fit-content;
 
         margin-block: 1em ;
-
     }
 }
 .midbar__item:hover {
     transform: scale(1.3);
 }
-.midbar__icon  {
+.midbar__icon {
     display: flex;
     justify-content: center;
+
     height: 4em;
     padding: 10px;
 }
 @media (min-width: 1020px) {
-    .midbar__icon{
+    .midbar__icon {
         width: auto;
         height: 6em;
-
     }
 }
 .midbar__text {
@@ -69,25 +93,5 @@
         font-size: 27px;
 
         width: 190px;
-    }
-}
-.midbar .container {
-    position: relative;
-
-    display: flex;
-    justify-content: space-around;
-    height: fit-content;
-    width: 100%;
-}
-@media (min-width: 1020px) {
-    .midbar .container {
-        position: relative;
-        left: 0vw;
-
-        display: flex;
-        justify-content: space-around;
-
-        width: 1020px;
-        height: 212px;
     }
 }
