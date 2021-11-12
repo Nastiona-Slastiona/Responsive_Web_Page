@@ -108,8 +108,8 @@ body {
 }
 /*      Round button    */
 .round_button{
-    width:61px;
-    height:61px;
+    width:3em;
+    height:3em;
     background-color: rgba(245, 197, 7, 0.8);
     border-radius: 50%;
     position: relative;
