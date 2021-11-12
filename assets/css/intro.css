@@ -89,13 +89,6 @@
     color: white;
 }
 
-.left_button {
-    display: none;
-}
-
-.right_button {
-    display: none;
-}
 .intro .round_button {
     display: none;
 }
@@ -169,71 +162,6 @@
         background-image: url('../images/sound.png');
         background-repeat: no-repeat;
         background-size: auto auto;
-    }
-
-    .left_button {
-        position: relative;
-        top: 15em;
-        left: -16%;
-
-        display: inline;
-
-        width: 32px;
-        height: 57px;
-
-        background-color: rgb(155, 125, 8, .9);
-        background-size: 100% 100%;
-    }
-    .left_button::before {
-        position: relative;
-        top: 50%;
-        left: 25%;
-
-        width: fit-content;
-        height: fit-content;
-        padding: 10px;
-
-        content: '';
-
-        background-image: url('../images/left.png');
-        background-repeat: no-repeat;
-        background-size: auto auto;
-    }
-    .left_button:hover {
-        opacity: 1;
-        background-color: rgba(245, 197, 7);
-    }
-    .right_button {
-        position: absolute;
-        top: 30vh;
-        left: 98.5%;
-
-        display: inline;
-
-        width: 32px;
-        height: 57px;
-
-        background-color: rgb(155, 125, 8, .9);
-        background-size: auto auto;
-    }
-    .right_button::before {
-        position: relative;
-        top: 50%;
-        left: 35%;
-
-        width: fit-content;
-        height: fit-content;
-        padding: 10px;
-
-        content: '';
-
-        background-image: url('../images/right.png');
-        background-repeat: no-repeat;
-        background-size: auto auto;
-    }
-    .right_button:hover {
-        opacity: 1;
-        background-color: rgba(245, 197, 7);
     }
     .intro .round_button {
         display: inherit;
