@@ -42,7 +42,7 @@ footer .logo__text {
     }
 }
 
-footer .logo__img {
+footer .logo__image {
     display: inline-flex;
 
     width: 2em;
@@ -52,7 +52,7 @@ footer .logo__img {
     background-size: 100% 100%;
 }
 @media (min-width: 1020px) {
-    footer .logo__img {
+    footer .logo__image {
         display: inline-flex;
 
         width: 52px;
