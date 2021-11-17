@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Responsive page</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
     <div class="wrapper">
@@ -14,14 +14,17 @@
             <div class="container">
                 <div class="section1__inner">
                     <header>
-                        <div class="logo">
-                            <div class="logo__img"></div>
-                            <div class="logo__text">Theyalow</div>
+                        <div class="logo--large">
+                            <div class="logo__image--large">
+                                <img src="assets/images/logo.svg">
+                            </div>
+                            <span class="logo__text--large">Theyalow</span>
+                            <span class="logo__text-author--large">craft by css author.com</span>
                         </div>
                         <nav class="menu">
-                            <a href="" class="menu__item about_us">About us</a>
-                            <a href="" class="menu__item services">Services</a>
-                            <a href="" class="menu__item contact">Contact</a>
+                            <a href="#" class="menu__item about_us">About us</a>
+                            <a href="#" class="menu__item services">Services</a>
+                            <a href="#" class="menu__item contact">Contact</a>
                         </nav>
                     </header>
                 </div>
@@ -44,7 +47,7 @@
                 </div>
             </div>
         </section>
-        <div class="midbar">
+        <section class="midbar">
             <div class="container">
                 <div class="midbar__item">
                     <div class="midbar__icon">
@@ -65,11 +68,11 @@
                     <div class="midbar__text">its free</div>
                 </div>
             </div>
-        </div>
+        </section>
         <section class="infobox">
             <div class="container">
-                <article class="infobox__text">lorem ipsum dolor sit amet</article>
-                <article class="infobox__textbox">
+                <article class="infobox__header">lorem ipsum dolor sit amet</article>
+                <article class="infobox__text">
                     Lorem ipsum dolor sit amet,
                     consectetur adipisicing elit, sed do eiusomod tempor incididunt ut
                     <div class="little-cross">
@@ -84,15 +87,17 @@
                 </article>
                 <article class="infobox__twitter">
                     <p>22</p>
-                    <div class="twitter__bird"></div>
+                    <div class="infobox__twitter-icon">
+                        <img src="assets/images/twit_bird.svg">
+                    </div>
                     <div class="little-cross">
                         <img src="assets/images/littlecross.png" alt="...">
                     </div>
                 </article>
                 <article class="infobox__messages">
-                    <div class="message message--visible1 message__text">Daily Mobile UI Design Inspiration #1<br>via @cssauthor</div>
-                    <div class="message message--visible2 message__text ">Daily Mobile UI Design Inspiration #1<br>via @cssauthor</div>
-                    <div class="message message--visible3 message__text">Daily Mobile UI Design Inspiration #1<br>via @cssauthor</div>
+                    <div class="infobox__message message--visible1">Daily Mobile UI Design Inspiration #1<br>via @cssauthor</div>
+                    <div class="infobox__message message--visible2">Daily Mobile UI Design Inspiration #1<br>via @cssauthor</div>
+                    <div class="infobox__message message--visible3">Daily Mobile UI Design Inspiration #1<br>via @cssauthor</div>
                     <form>
                         <input type="text">
                         <button type="submit">Tweet</button>
@@ -102,17 +107,19 @@
                 <div class="scroll"></div>
             </div>
         </section>
-        <section class="section2">
+        <section class="devices-section">
             <div class="container">
-                <article class="section2__text">
-                    <div class="firstLine">Lorem ipsum dolor sit amet</div>
+                <article class="devices-section__header">
+                    <p>Lorem ipsum dolor sit amet</p>
                 </article>
-                <article class="section2__images">
-                    <div class="computer">
-                        <div class="sticker"><p>its 100% free<p></div>
+                <article class="devices-section__devices-list">
+                    <div class="devices-section__device--large">
+                        <div class="devices-section__device-sticker">
+                            <p>its 100% free<p>
+                        </div>
                     </div>
-                        <div class="laptop"></div>
-                        <div class="phone"></div>
+                    <div class="devices-section__device--middle"></div>
+                    <div class="devices-section__device--small"></div>
                 </article>
                 <ul>
                     <li>Sed ut perspiciatis unde omnis</li>
@@ -125,8 +132,11 @@
         <footer>
             <div class="container">
                 <div class="logo">
-                    <div class="logo__img"></div>
-                    <div class="logo__text">Theyalow</div>
+                    <div class="logo__image">
+                        <img src="assets/images/logo.svg">
+                    </div>
+                    <span class="logo__text">Theyalow</span>
+                    <span class="logo__text-author">Designed by cssauthor.com</span>
                 </div>
             </div>
         </footer>

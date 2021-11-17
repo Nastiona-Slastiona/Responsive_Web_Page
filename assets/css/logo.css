@@ -1,0 +1,150 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.logo__text {
+  font-size: 16px;
+  font-family: 'Lucida Sans';
+  font-size: 100%;
+  font-weight: 100;
+  font-style: italic;
+  display: inline;
+
+  text-transform: uppercase;
+
+  color: #fff;
+  text-shadow: 0 3px 0 rgba(0, 0, 0, 0.42);
+}
+
+@media (min-width: 1020px) {
+  .logo__text {
+    font-size: 25px;
+  }
+}
+
+.logo__image {
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  margin: 5px 10px;
+}
+
+@media (min-width: 1020px) {
+  .logo__image {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+.logo__text-author {
+  display: none;
+}
+
+@media (min-width: 1020px) {
+  .logo__text-author {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    padding: 0 0 0 220px;
+
+    display: inline;
+
+    color: rgb(255, 255, 255);
+  }
+}
+
+.logo--large {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  height: 61px;
+
+  transition: 1s;
+
+  background-size: 100% 100%;
+
+  padding: 0 20px 0 10px;
+}
+
+@media (max-width: 700px) {
+  .logo--large {
+    background-color: rgb(56, 53, 53);
+    background-image: -moz-linear-gradient(
+      90deg,
+      rgb(46, 45, 45) 0%,
+      rgb(91, 91, 91) 100%
+    );
+    background-image: -webkit-linear-gradient(
+      90deg,
+      rgb(46, 45, 45) 0%,
+      rgb(91, 91, 91) 100%
+    );
+    background-image: -ms-linear-gradient(
+      90deg,
+      rgb(46, 45, 45) 0%,
+      rgb(91, 91, 91) 100%
+    );
+  }
+}
+
+.logo__text--large {
+  font-size: 19px;
+  font-weight: 100;
+  font-family: 'Lucida Sans';
+  display: inline;
+  align-self: center;
+  font-style: italic;
+
+  width: fit-content;
+  height: fit-content;
+  padding-left: 0;
+  color: #fff;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.42);
+  text-align: center;
+
+  text-transform: uppercase;
+}
+
+.logo__text-author--large {
+  display: none;
+}
+
+@media (min-width: 1020px) {
+  .logo__text--large {
+    font-size: 41px;
+  }
+
+  .logo__text-author--large {
+    display: inline;
+    font-family: 'LaoUI';
+    font-size: 13px;
+    margin: 20px 0 0 5px;
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.769);
+  }
+}
+
+.logo__image--large {
+  display: inline-flex;
+
+  width: 41px;
+  height: 41px;
+  margin: 0 5px 0 0px;
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+@media (min-width: 1020px) {
+  .logo__image--large {
+    display: flex;
+
+    width: 81px;
+    height: 81px;
+
+    background-size: 100% 100%;
+  }
+}
