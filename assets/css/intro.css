@@ -1,180 +1,178 @@
-/*      Intro       */
 .intro {
-    display: block;
+  display: block;
 
-    width: 100%;
+  width: 100%;
 
-    transition: 1s;
+  transition: 1s;
 }
 @media (min-width: 700px) {
-    .intro {
-        display: inline-flex;
-        align-content: center;
-        justify-content: center;
+  .intro {
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
 
-        width: 90%;
-        margin-bottom: 20px;
-    }
+    width: 90%;
+    margin-bottom: 20px;
+  }
 }
 @media (min-width: 1020px) {
-    .intro {
-        display: grid;
-        justify-content: space-between;
-
-        width: 100%;
-        margin-left: 20px;
-
-        grid-template-columns: 1fr auto;
-        gap: 90px;
-    }
-}
-.intro__image {
-    display: flex;
+  .intro {
+    display: grid;
+    justify-content: space-between;
 
     width: 100%;
+    margin-left: 20px;
+
+    grid-template-columns: 1fr auto;
+    gap: 90px;
+  }
+}
+.intro__image {
+  display: flex;
+
+  width: 100%;
+  height: 327px;
+
+  background: url('../images/intro_02.png') no-repeat;
+  background-size: 100% 100%;
+}
+@media (min-width: 700px) {
+  .intro__image {
+    display: flex;
+    align-self: center;
+
+    width: 80%;
     height: 327px;
 
-    background: url('../images/intro_02.png')
-    no-repeat;
-    background-size: 100% 100%;
+    justify-self: center;
+  }
 }
-@media (min-width:700px) {
-    .intro__image {
-        display: flex;
-        align-self: center;
+@media (min-width: 1020px) {
+  .intro__image {
+    display: flex;
 
-        width: 80%;
-        height: 327px;
+    width: 553px;
+    min-height: max-content;
 
-        justify-self: center;
-    }
-}
-@media (min-width:1020px) {
-    .intro__image {
-        display: flex;
-
-        width: 553px;
-        min-height: max-content;
-
-        justify-self: center;
-    }
+    justify-self: center;
+  }
 }
 .intro__text span {
-    display: none;
+  display: none;
 }
-@media (min-width:1020px) {
-    .intro__text span {
-        font-family: 'Asap';
-        font-size: 63px;
-        line-height: 1.2;
+@media (min-width: 1020px) {
+  .intro__text span {
+    font-family: 'Asap';
+    font-size: 63px;
+    line-height: 1.2;
 
-        display: inline-block;
-        visibility: visible;
+    display: inline-block;
+    visibility: visible;
 
-        width: auto;
-        padding-top: 20%;
+    width: auto;
+    padding-top: 20%;
 
-        text-align: center;
-        text-transform: uppercase;
-    }
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 .player {
-    display: none;
+  display: none;
 }
 .player__button {
-    display: none;
+  display: none;
 }
 
 .player__line {
-    display: none;
+  display: none;
 }
 
 .firstLine {
-    color: rgb(245, 197, 6);
+  color: rgb(245, 197, 6);
 }
 .secondLine {
-    color: white;
+  color: white;
 }
 
 .intro .round_button {
-    display: none;
+  display: none;
 }
-@media (min-width:1020px) {
-    .player {
-        position: relative;
-        top: 90%;
-        left: 5%;
+@media (min-width: 1020px) {
+  .player {
+    position: relative;
+    top: 90%;
+    left: 5%;
 
-        display: inherit;
+    display: inherit;
 
-        width: 403px;
-        height: 13px;
+    width: 403px;
+    height: 13px;
 
-        border-radius: 7px ;
-        background-color: rgb(155, 125, 8, .7);
-    }
-    .player__button {
-        position: relative;
-        top: -25%;
-        left: -49%;
+    border-radius: 7px;
+    background-color: rgb(155, 125, 8, 0.7);
+  }
+  .player__button {
+    position: relative;
+    top: -25%;
+    left: -49%;
 
-        display: inherit;
+    display: inherit;
 
-        width: 20px;
-        height: 20px;
+    width: 20px;
+    height: 20px;
 
-        background-color: rgba(245, 197, 7, .5);
-    }
-    .player__button::before {
-        position: relative;
-        top: 20%;
-        left: 20%;
+    background-color: rgba(245, 197, 7, 0.5);
+  }
+  .player__button::before {
+    position: relative;
+    top: 20%;
+    left: 20%;
 
-        display: flex;
+    display: flex;
 
-        width: 50%;
-        height: 50%;
+    width: 50%;
+    height: 50%;
 
-        content: '';
+    content: '';
 
-        background-image: url('../images/play.png');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-    }
-    .player__button:hover {
-        opacity: 1;
-        background-color: rgba(245, 197, 7);
-    }
-    .player__line {
-        display: inherit;
+    background-image: url('../images/play.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .player__button:hover {
+    opacity: 1;
+    background-color: rgba(245, 197, 7);
+  }
+  .player__line {
+    display: inherit;
 
-        width: 150px;
-        height: 13px;
+    width: 150px;
+    height: 13px;
 
-        opacity: 1;
-        border-top-left-radius: 7px;
-        border-bottom-left-radius: 7px;
-        background-color: rgb(255, 201, 24);
-    }
-    .player__line::after {
-        position: relative;
-        top: 0;
-        left: 275%;
+    opacity: 1;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    background-color: rgb(255, 201, 24);
+  }
+  .player__line::after {
+    position: relative;
+    top: 0;
+    left: 275%;
 
-        width: 10px;
-        height: 10px;
-        padding: 10px;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
 
-        content: '';
+    content: '';
 
-        background-image: url('../images/sound.png');
-        background-repeat: no-repeat;
-        background-size: auto auto;
-    }
-    .intro .round_button {
-        display: inherit;
-    }
-    .intro .round_button::before {
-        top: 25%;
-    }
+    background-image: url('../images/sound.png');
+    background-repeat: no-repeat;
+    background-size: auto auto;
+  }
+  .intro .round_button {
+    display: inherit;
+  }
+  .intro .round_button::before {
+    top: 25%;
+  }
 }
