@@ -1,0 +1,18 @@
+.container {
+  position: relative;
+  width: 100%;
+  max-height: min-content;
+
+  transition: 1s;
+}
+
+@media (min-width: 700px) {
+  .container {
+    height: fit-content;
+  }
+}
+@media (min-width: 1020px) {
+  .container {
+    width: 1020px;
+  }
+}

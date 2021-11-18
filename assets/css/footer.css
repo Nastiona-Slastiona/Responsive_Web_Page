@@ -1,4 +1,4 @@
-footer {
+.footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,7 +12,7 @@ footer {
   box-shadow: 0 -3px 10px 2px rgb(31, 29, 29);
 }
 @media (min-width: 1020px) {
-  footer {
+  .footer {
     position: relative;
 
     display: flex;
@@ -21,7 +21,7 @@ footer {
   }
 }
 
-footer .container {
+.footer .container {
   position: relative;
 
   display: flex;
@@ -30,7 +30,7 @@ footer .container {
   height: fit-content;
 }
 @media (min-width: 1020px) {
-  footer .container {
+  .footer .container {
     position: relative;
     width: 1020px;
     display: flex;

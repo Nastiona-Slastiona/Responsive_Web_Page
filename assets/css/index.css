@@ -1,6 +1,6 @@
 @import url('./reset.css');
 @import url('./fonts.css');
-@import url('./section1.css');
+@import url('./banner.css');
 @import url('./header.css');
 @import url('./intro.css');
 @import url('./midbar.css');
@@ -8,6 +8,8 @@
 @import url('./devices-section.css');
 @import url('./footer.css');
 @import url('./logo.css');
+@import url('./menu.css');
+@import url('./container.css');
 
 html {
   box-sizing: border-box;
@@ -22,7 +24,6 @@ html {
 body {
   font-family: 'Lucida Sans', sans-serif;
   font-size: 20px;
-
   overflow-x: hidden;
 
   width: 100%;
@@ -35,37 +36,6 @@ body {
     overflow-x: hidden;
 
     width: 100%;
-  }
-  .wrapper {
-    position: relative;
-
-    display: grid;
-
-    max-width: 100%;
-  }
-}
-
-.container {
-  width: 100%;
-  max-height: min-content;
-
-  transition: 1s;
-}
-
-@media (min-width: 700px) {
-  .container {
-    position: relative;
-
-    width: 100%;
-    height: fit-content;
-  }
-}
-@media (min-width: 1020px) {
-  .container {
-    position: relative;
-
-    width: max-content;
-    height: fit-content;
   }
 }
 
