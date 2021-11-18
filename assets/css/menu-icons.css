@@ -1,0 +1,54 @@
+.about_us::before {
+  display: inline-flex;
+
+  width: 25px;
+  height: 25px;
+  margin-right: 0.3em;
+
+  content: '';
+  transition: 2s;
+
+  background-image: url('../images/aboutus.svg');
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+.services::before {
+  display: inline-flex;
+
+  width: 25px;
+  height: 25px;
+  margin-right: 0.1em;
+
+  content: '';
+  transition: 2s;
+
+  background-image: url('../images/services.svg');
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+.contact::before {
+  display: inline-flex;
+
+  width: 25px;
+  height: 25px;
+  margin-right: 0.3em;
+
+  content: '';
+  transition: 2s;
+
+  background-image: url('../images/contact.svg');
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+@media (min-width: 700px) {
+  .about_us::before {
+    margin-right: 0.5em;
+    margin-left: 1em;
+  }
+  .services::before {
+    margin-right: 0.5em;
+  }
+  .contact::before {
+    margin-right: 0.5em;
+  }
+}

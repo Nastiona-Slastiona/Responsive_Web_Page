@@ -11,25 +11,23 @@
     align-content: center;
     justify-content: center;
 
-    width: 90%;
+    width: 100%;
     margin-bottom: 20px;
   }
 }
 @media (min-width: 1020px) {
   .intro {
-    display: grid;
+    display: flex;
     justify-content: space-between;
 
     width: 100%;
     margin-left: 20px;
 
-    grid-template-columns: 1fr auto;
+    /* grid-template-columns: 1fr auto; */
     gap: 90px;
   }
 }
 .intro__image {
-  display: flex;
-
   width: 100%;
   height: 327px;
 
@@ -42,7 +40,7 @@
     align-self: center;
 
     width: 80%;
-    height: 327px;
+    /* height: 327px; */
 
     justify-self: center;
   }
@@ -69,7 +67,7 @@
     display: inline-block;
     visibility: visible;
 
-    width: auto;
+    width: 100%;
     padding-top: 20%;
 
     text-align: center;
@@ -87,10 +85,10 @@
   display: none;
 }
 
-.firstLine {
+.primary {
   color: rgb(245, 197, 6);
 }
-.secondLine {
+.secondary {
   color: white;
 }
 
