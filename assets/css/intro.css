@@ -78,7 +78,7 @@
   color: white;
 }
 
-.intro .round_button {
+.intro .play-button--round {
   display: none;
 }
 @media (min-width: 1020px) {
@@ -135,10 +135,13 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
-  .intro .round_button {
+  .intro .play-button--round {
     display: inherit;
+    position: relative;
   }
-  .intro .round_button::before {
-    top: 25%;
+  .intro .play-button--round::before {
+    height: 70%;
+    width: 10px;
+    top: 10%;
   }
 }

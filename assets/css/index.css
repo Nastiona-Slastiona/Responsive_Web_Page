@@ -1,5 +1,5 @@
-@import url('./fonts.css');
 @import url('./reset.css');
+@import url('./fonts.css');
 @import url('./banner.css');
 @import url('./header.css');
 @import url('./intro.css');
@@ -12,7 +12,7 @@
 @import url('./container.css');
 @import url('./switch-button.css');
 @import url('./menu-icons.css');
-
+@import url('./play-button--round.css');
 html {
   box-sizing: border-box;
   width: 100vw;

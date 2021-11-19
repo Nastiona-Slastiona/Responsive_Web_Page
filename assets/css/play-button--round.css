@@ -1,0 +1,30 @@
+.play-button--round {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+  background-color: rgba(245, 197, 7, 0.8);
+}
+.play-button--round::before {
+  position: relative;
+  top: 30%;
+  left: 39%;
+
+  width: 30px;
+  height: 20px;
+  padding: 10px;
+
+  content: '';
+
+  opacity: 1;
+  background-image: url('../images/play.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.play-button--round:hover {
+  opacity: 1;
+  background-color: rgba(245, 197, 7);
+}
