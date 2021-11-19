@@ -18,7 +18,7 @@
 
     transition: 1s;
 
-    background-image: url('../images/devices-section_bg.png');
+    background-image: url('../images/section2_bg.png');
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content fit-content;
   }

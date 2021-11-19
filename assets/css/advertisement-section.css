@@ -1,6 +1,5 @@
 .advertisement-section {
   position: relative;
-
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -12,18 +11,10 @@
     0 -3px 0 9px rgba(255, 255, 255, 0.4),
     inset 0 -3px 0 4px rgba(255, 255, 255, 0.5),
     inset 0 -3px 0 9px rgba(255, 255, 255, 0.4);
-
-  padding-block: 1em;
 }
 @media (min-width: 1020px) {
   .advertisement-section {
-    position: relative;
-
-    display: flex;
-
     box-shadow: -3px 0 6px 3px rgba(19, 3, 3, 0.4);
-
-    padding-block: 0;
   }
 }
 .advertisement-section .container {
@@ -37,28 +28,28 @@
 }
 @media (min-width: 1020px) {
   .advertisement-section .container {
-    position: relative;
-    left: 0;
-
-    display: flex;
-    justify-content: space-around;
-
     width: 1020px;
-    height: 212px;
   }
 }
 .advertisement-section__item {
   display: inline;
+  width: fit-content;
 
   transition: 1s;
+  margin: 30px 0;
+
+  font-family: 'Segoe UI';
+  font-size: 23px;
+  font-weight: 100;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: rgb(14, 13, 13);
 }
 @media (min-width: 1020px) {
   .advertisement-section__item {
-    display: inline;
-
-    width: fit-content;
-
-    margin-block: 1em;
+    font-size: 27px;
   }
 }
 .advertisement-section__item:hover {
@@ -68,31 +59,12 @@
   display: flex;
   justify-content: center;
 
-  height: 4em;
-  padding: 10px;
+  height: 61px;
+  margin-bottom: 10px;
 }
+
 @media (min-width: 1020px) {
   .advertisement-section__icon {
-    width: auto;
-    height: 6em;
-  }
-}
-.advertisement-section__text {
-  font-family: 'Segoe UI';
-  font-size: 23px;
-  font-weight: 100;
-
-  display: inline-block;
-
-  text-align: center;
-  text-transform: uppercase;
-
-  color: rgb(14, 13, 13);
-}
-@media (min-width: 1020px) {
-  .advertisement-section__text {
-    font-size: 27px;
-
-    width: 190px;
+    height: 74px;
   }
 }
