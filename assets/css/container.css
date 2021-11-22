@@ -1,7 +1,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-height: min-content;
+  min-height: min-content;
 
   transition: 1s;
 }
