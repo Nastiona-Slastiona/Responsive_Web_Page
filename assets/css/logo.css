@@ -3,15 +3,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   width: 100%;
 }
 
 .logo__text {
-  font-size: 16px;
   font-family: 'Lucida Sans';
+  font-size: 16px;
   font-size: 100%;
   font-weight: 100;
   font-style: italic;
+
   display: inline;
 
   text-transform: uppercase;
@@ -28,6 +30,7 @@
 
 .logo__image {
   display: inline-flex;
+
   width: 32px;
   height: 32px;
   margin: 5px 10px;
@@ -48,9 +51,10 @@
   .logo__text-author {
     font-family: 'Open Sans';
     font-size: 18px;
-    padding: 0 0 0 220px;
 
     display: inline;
+
+    padding: 0 0 0 220px;
 
     color: rgb(255, 255, 255);
   }
@@ -59,14 +63,14 @@
 .logo--large {
   display: flex;
   align-items: center;
+
   width: max-content;
   height: 61px;
+  padding: 0 20px 0 10px;
 
   transition: 1s;
 
   background-size: 100% 100%;
-
-  padding: 0 20px 0 10px;
 }
 
 @media (max-width: 700px) {
@@ -89,23 +93,31 @@
     );
   }
 }
+@media (min-width: 1020px) {
+  .logo--large {
+    padding-left: 0;
+  }
+}
 
 .logo__text--large {
+  font-family: 'Lucida Sans';
   font-size: 19px;
   font-weight: 100;
-  font-family: 'Lucida Sans';
+  font-style: italic;
+
   display: inline;
   align-self: center;
-  font-style: italic;
 
   width: fit-content;
   height: fit-content;
+  margin-right: 10px;
   padding-left: 0;
+
+  text-align: center;
+  text-transform: uppercase;
+
   color: #fff;
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.42);
-  text-align: center;
-
-  text-transform: uppercase;
 }
 
 .logo__text-author--large {
@@ -115,13 +127,18 @@
 @media (min-width: 1020px) {
   .logo__text--large {
     font-size: 41px;
+
+    margin-right: 0;
   }
 
   .logo__text-author--large {
-    display: inline;
     font-family: 'LaoUI';
     font-size: 13px;
-    margin: 20px 0 0 5px;
+
+    display: inline;
+
+    margin: 20px 0 0 0;
+
     text-transform: uppercase;
 
     color: rgba(255, 255, 255, 0.769);
@@ -133,7 +150,7 @@
 
   width: 41px;
   height: 41px;
-  margin: 0 5px 0 0px;
+  margin: 0 5px 0 0;
 
   background-repeat: no-repeat;
   background-size: 100% 100%;

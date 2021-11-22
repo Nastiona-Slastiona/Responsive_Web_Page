@@ -1,6 +1,19 @@
 .header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+
   width: 100%;
   height: fit-content;
+}
+
+@media (min-width: 1020px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: fit-content;
+  }
 }

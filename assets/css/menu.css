@@ -15,6 +15,7 @@
     display: flex;
 
     width: max-content;
+    margin-top: 40px;
   }
 }
 @media (min-width: 1020px) {
@@ -31,14 +32,14 @@
 }
 .menu__item {
   font-family: 'SegoeWP';
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: normal;
 
-  display: inline;
+  display: flex;
 
   width: max-content;
   height: inherit;
-  padding: 0.5em;
+  padding: 1em;
 
   text-align: center;
   text-decoration: none;
@@ -46,25 +47,13 @@
 
   border-right: 1px solid rgba(87, 82, 82, 0.247);
 }
-@media (min-width: 610px) {
-  .menu__item {
-    font-size: 1em;
 
-    display: flex;
-
-    padding: 1em;
-  }
-}
 @media (min-width: 700px) {
   .menu__item {
     font-size: 0.9em;
 
     display: flex;
     align-items: center;
-
-    width: max-content;
-
-    padding-inline-end: 1em;
   }
 }
 
@@ -77,12 +66,15 @@
 
 .menu__item-link {
   text-decoration: none;
-
+  margin-right: 10px;
   color: rgb(155, 125, 8);
 }
-
+.menu__item-icon--beginner {
+  margin-right: 5px;
+  margin-left: 10px;
+}
 .menu__item-icon {
-  margin-right: 3px;
+  margin-right: 5px;
 
   transition: 2s;
 }
@@ -90,9 +82,10 @@
 @media (min-width: 700px) {
   .menu__item-icon--beginner {
     margin-right: 10px;
-    margin-left: 20px;
+    margin-left: 25px;
   }
   .menu__item-icon {
-    margin-right: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }

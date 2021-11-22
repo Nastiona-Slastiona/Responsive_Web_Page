@@ -1,23 +1,22 @@
-.switch-button--previous {
+.banner__switch-button--previous {
   display: none;
 }
 
-.switch-button--next {
+.banner__switch-button--next {
   display: none;
 }
-@media (min-width: 1100px) {
-  .switch-button--previous {
-    margin-top: 25%;
-
+@media (min-width: 1020px) {
+  .banner__switch-button--previous {
     display: inline;
 
     width: 32px;
     height: 57px;
+    margin-top: 300px;
 
     background-color: rgb(155, 125, 8, 0.9);
     background-size: 100% 100%;
   }
-  .switch-button--previous::before {
+  .banner__switch-button--previous::before {
     position: relative;
     top: 50%;
     left: 25%;
@@ -32,20 +31,21 @@
     background-repeat: no-repeat;
     background-size: auto auto;
   }
-  .switch-button--previous:hover {
+  .banner__switch-button--previous:hover {
     opacity: 1;
     background-color: rgba(245, 197, 7);
   }
-  .switch-button--next {
+  .banner__switch-button--next {
     display: inline;
-    margin-top: 25%;
+
     width: 32px;
     height: 57px;
+    margin-top: 300px;
 
     background-color: rgb(155, 125, 8, 0.9);
     background-size: auto auto;
   }
-  .switch-button--next::before {
+  .banner__switch-button--next::before {
     position: relative;
     top: 50%;
     left: 35%;
@@ -60,7 +60,7 @@
     background-repeat: no-repeat;
     background-size: auto auto;
   }
-  .switch-button--next:hover {
+  .banner__switch-button--next:hover {
     opacity: 1;
     background-color: rgba(245, 197, 7);
   }

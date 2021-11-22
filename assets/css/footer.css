@@ -16,26 +16,14 @@
     position: relative;
 
     display: flex;
-
-    padding-top: 5px;
   }
 }
 
-.footer .container {
+.footer__container {
   position: relative;
 
   display: flex;
   justify-content: center;
 
   height: fit-content;
-}
-@media (min-width: 1020px) {
-  .footer .container {
-    position: relative;
-    width: 1020px;
-    display: flex;
-    justify-content: center;
-
-    height: 3em;
-  }
 }

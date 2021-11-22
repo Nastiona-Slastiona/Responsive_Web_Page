@@ -1,5 +1,6 @@
 .advertisement-section {
   position: relative;
+
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -17,7 +18,7 @@
     box-shadow: -3px 0 6px 3px rgba(19, 3, 3, 0.4);
   }
 }
-.advertisement-section .container {
+.advertisement-section__container {
   position: relative;
 
   display: flex;
@@ -27,21 +28,21 @@
   height: fit-content;
 }
 @media (min-width: 1020px) {
-  .advertisement-section .container {
+  .advertisement-section__container {
     width: 1020px;
   }
 }
 .advertisement-section__item {
-  display: inline;
-  width: fit-content;
-
-  transition: 1s;
-  margin: 30px 0;
-
   font-family: 'Segoe UI';
   font-size: 23px;
   font-weight: 100;
 
+  display: inline;
+
+  width: fit-content;
+  margin: 30px 0;
+
+  transition: 1s;
   text-align: center;
   text-transform: uppercase;
 
