@@ -1,14 +1,22 @@
-.play-button--round {
+.play-button--rounded {
   position: absolute;
-  top: 40%;
-  left: 50%;
+  top: 25%;
+  left: 67%;
   width: 60px;
   height: 60px;
 
   border-radius: 50%;
   background-color: rgba(245, 197, 7, 0.8);
 }
-.play-button--round::before {
+
+@media (min-width: 1020px) {
+  .play-button--rounded {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+  }
+}
+.play-button--rounded::before {
   position: relative;
   top: 30%;
   left: 39%;
@@ -24,7 +32,7 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-.play-button--round:hover {
+.play-button--rounded:hover {
   opacity: 1;
   background-color: rgba(245, 197, 7);
 }
