@@ -44,7 +44,6 @@
   text-decoration: none;
   text-transform: uppercase;
 
-  color: rgb(155, 125, 8);
   border-right: 1px solid rgba(87, 82, 82, 0.247);
 }
 @media (min-width: 610px) {
@@ -74,4 +73,26 @@
   text-decoration: none;
 
   background-color: #fb940e;
+}
+
+.menu__item-link {
+  text-decoration: none;
+
+  color: rgb(155, 125, 8);
+}
+
+.menu__item-icon {
+  margin-right: 3px;
+
+  transition: 2s;
+}
+
+@media (min-width: 700px) {
+  .menu__item-icon--beginner {
+    margin-right: 10px;
+    margin-left: 20px;
+  }
+  .menu__item-icon {
+    margin-right: 5px;
+  }
 }

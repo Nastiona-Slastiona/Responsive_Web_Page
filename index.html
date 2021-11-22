@@ -19,18 +19,33 @@
                         <span class="logo__text--large">Theyalow</span>
                         <span class="logo__text-author--large">craft by css author.com</span>
                     </div>
-                    <nav class="menu">
-                        <a href="#" class="menu__item about_us">About us</a>
-                        <a href="#" class="menu__item services">Services</a>
-                        <a href="#" class="menu__item contact">Contact</a>
+                    <nav>
+                        <ul class="menu">
+                            <li class="menu__item">
+                                <a href="#" class="menu__item-link">
+                                    <img class="menu__item-icon--beginner"  src="./assets/images/aboutus.svg"></img>
+                                    About us
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__item-link">
+                                    <img class="menu__item-icon" src="assets/images/services.svg">
+                                    Services</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__item-link">
+                                    <img class="menu__item-icon" src="assets/images/contact.svg">
+                                        Contact</a>
+                            </li>
+                        </ul>
                     </nav>
                 </header>
             </div>
             <div class="banner__inner">
                 <div class="intro">
                     <div class="intro__image">
-                        <div class="play-button--round"></div>
-                        <div class="player">
+                    <div class="play-button--rounded"></div>
+                    <div class="player">
                             <div class="player__progressbar"></div>
                             <div class="player__button-play"></div>
                             <div class="player__sound"></div>
@@ -69,41 +84,44 @@
     </section>
     <section class="infobox">
         <div class="container">
-            <article class="infobox__header">lorem ipsum dolor sit amet</article>
-            <article class="infobox__text">
-                Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit, sed do eiusomod tempor incididunt ut
-                <div class="infobox__add-button">+</div>
-            </article>
-            <div class="infobox__date">
-                <div class="infobox__date-day">25
-                    <p class="infobox__date-month">april</p>
+
+            <div class="infobox__container">
+                <article class="infobox__header">lorem ipsum dolor sit amet</article>
+                <article class="infobox__text">
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit, sed do eiusomod tempor incididunt ut
+                    <div class="infobox__add-button">+</div>
+                </article>
+                <div class="infobox__date">
+                    <div class="infobox__date-day">25
+                        <p class="infobox__date-month">april</p>
+                    </div>
                 </div>
+                <article class="infobox__player">
+                    <!-- <div class="play-button--rounded"></div> -->
+                    <img class="infobox__player-picture" src="assets/images/player_pic.png" alt="player_picture">
+                </article>
+                <article class="infobox__twitter-section">
+                    <p class="infobox__twitter-number">22</p>
+                    <div class="infobox__twitter-icon">
+                        <img src="assets/images/twit_bird.svg">
+                    </div>
+                    <div class="infobox__add-button">+</div>
+                </article>
+                <article class="infobox__messages">
+                    <div class="infobox__message message">Daily Mobile UI Design Inspiration #1<br>via @cssauthor</div>
+                    <div class="infobox__message message__opacity--middle">Daily Mobile UI Design Inspiration #1<br>via @cssauthor</div>
+                    <div class="infobox__message message__opacity--low">Daily Mobile UI Design Inspiration #1<br>via @cssauthor</div>
+                    <form>
+                        <input class="tweet__input" type="text">
+                        <button class="tweet__button" type="button">Tweet</button>
+                    </form>
+                </article>
+                <div class="infobox__scrollbar"></div>
+                <div class="scrollbar__slider"></div>
             </div>
-            <article class="infobox__player">
-                <div class="play-button--round"></div>
-                <img src="assets/images/player_pic.png" alt="player_picture">
-            </article>
-            <article class="infobox__twitter">
-                <p class="infobox__twitter-number">22</p>
-                <div class="infobox__twitter-icon">
-                    <img src="assets/images/twit_bird.svg">
-                </div>
-                <div class="infobox__add-button">+</div>
-            </article>
-            <article class="infobox__messages">
-                <div class="infobox__message message">Daily Mobile UI Design Inspiration #1<br>via @cssauthor</div>
-                <div class="infobox__message message__opacity--middle">Daily Mobile UI Design Inspiration #1<br>via @cssauthor</div>
-                <div class="infobox__message message__opacity--low">Daily Mobile UI Design Inspiration #1<br>via @cssauthor</div>
-                <form>
-                    <input class="tweet__input" type="text">
-                    <button class="tweet__button" type="button">Tweet</button>
-                </form>
-            </article>
-            <div class="infobox__scrollbar"></div>
-            <div class="scrollbar__slider"></div>
         </div>
-    </section>
+        </section>
     <section class="devices-section">
         <div class="container">
             <article class="devices-section__header">
