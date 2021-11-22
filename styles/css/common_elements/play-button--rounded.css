@@ -29,7 +29,7 @@
   content: '';
 
   opacity: 1;
-  background-image: url('../../images/play.png');
+  background-image: url('../../../static/images/play.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }

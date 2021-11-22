@@ -7,7 +7,7 @@
   justify-content: space-around;
 
   background-color: white;
-  background-image: url('../images/bckg_midbar.png');
+  background-image: url('../../../static/images/bckg_midbar.png');
   background-size: 100% 100%;
   box-shadow: 0 -3px 0 4px rgba(255, 255, 255, 0.5),
     0 -3px 0 9px rgba(255, 255, 255, 0.4),

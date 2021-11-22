@@ -6,7 +6,7 @@
     display: block;
     align-self: start;
 
-    list-style-image: url('../../../images/list.png');
+    list-style-image: url('../../../../static/images/list.png');
 
     text-align: left;
 

@@ -27,7 +27,7 @@
   text-align: left;
 
   color: rgb(143, 142, 142);
-  background-image: url('../../../images/message.png');
+  background-image: url('../../../../static/images/message.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 

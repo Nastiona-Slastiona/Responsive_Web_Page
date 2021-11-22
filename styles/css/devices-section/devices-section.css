@@ -17,7 +17,7 @@
 
     transition: 1s;
 
-    background-image: url('../../images/section2_bg.png');
+    background-image: url('../../../static/images/section2_bg.png');
   }
 }
 .devices-section__container {

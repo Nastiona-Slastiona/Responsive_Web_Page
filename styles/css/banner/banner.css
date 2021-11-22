@@ -6,7 +6,7 @@
   width: 100%;
   height: max-content;
 
-  background-image: url('../../images/header.jpg');
+  background-image: url('../../../static/images/header.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }

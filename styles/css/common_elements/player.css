@@ -34,7 +34,7 @@
     height: 20px;
 
     background-color: rgba(245, 197, 7, 0.5);
-    background-image: url('../../images/play.png');
+    background-image: url('../../../static/images/play.png');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 50% 50%;
@@ -61,7 +61,7 @@
     height: 10px;
     padding: 8px;
 
-    background-image: url('../../images/sound.png');
+    background-image: url('../../../static/images/sound.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
