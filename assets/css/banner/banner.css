@@ -1,0 +1,23 @@
+@import url('./_items/banner__item.css');
+.banner {
+  display: inline-flex;
+  justify-content: space-between;
+
+  width: 100%;
+  height: max-content;
+
+  background-image: url('../../images/header.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.banner__container {
+  display: block;
+  min-height: 100%;
+}
+
+@media (min-width: 1020px) {
+  .banner__container {
+    width: 100%;
+  }
+}

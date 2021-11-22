@@ -1,0 +1,49 @@
+@import url('./__add-button/infobox__add-button.css');
+@import url('./__date/infobox__date.css');
+@import url('./__header/infobox__header.css');
+@import url('./__message/infobox__message.css');
+@import url('./__player/infobox__player.css');
+@import url('./__scrollbar/infobox__scrollbar.css');
+@import url('./__text/infobox__text.css');
+@import url('./__tweet/infobox__tweet.css');
+@import url('./__twitter-section/infobox__twitter-section.css');
+
+.infobox {
+  display: flex;
+  overflow: hidden;
+
+  transition: 1s;
+
+  background-image: none;
+}
+@media (min-width: 1020px) {
+  .infobox {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    min-height: fit-content;
+
+    background-color: white;
+    background-image: url('../../images/infobox_bckg.jpg');
+  }
+}
+.infobox__container {
+  display: grid;
+
+  transition: 1s;
+
+  background-image: none;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, fit-content);
+}
+@media (min-width: 1020px) {
+  .infobox__container {
+    max-width: 100%;
+    min-height: fit-content;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr min-content 1fr;
+  }
+}

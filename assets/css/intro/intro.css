@@ -1,0 +1,47 @@
+@import url('./__text/intro__text.css');
+@import url('./__image/intro__image.css');
+.intro {
+  display: inline-flex;
+
+  width: 100%;
+
+  transition: 1s;
+}
+@media (min-width: 700px) {
+  .intro {
+    justify-content: center;
+  }
+}
+@media (min-width: 1020px) {
+  .intro {
+    justify-content: space-between;
+
+    margin-left: 5px;
+
+    gap: 45px;
+  }
+}
+.primary {
+  color: rgb(245, 197, 6);
+}
+.secondary {
+  color: white;
+}
+
+.intro .play-button--rounded {
+  display: none;
+}
+@media (min-width: 1020px) {
+  .intro .play-button--rounded {
+    position: relative;
+    left: 45%;
+
+    display: inherit;
+  }
+  .intro .play-button--rounded::before {
+    top: 10%;
+
+    width: 10px;
+    height: 70%;
+  }
+}

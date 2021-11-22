@@ -1,0 +1,54 @@
+.infobox__date {
+  display: none;
+}
+.infobox__date-day {
+  display: none;
+}
+.infobox__date-month {
+  display: none;
+}
+@media (min-width: 1020px) {
+  .infobox__date {
+    position: relative;
+    top: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    width: 114px;
+    height: 86px;
+    padding-top: 15px;
+
+    background-color: #ddb101;
+    background-size: auto auto;
+
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .infobox__date:hover {
+    background-color: #ffad15;
+  }
+  .infobox__date-day {
+    font-family: 'Segoe UI';
+    font-size: 51px;
+    font-weight: bold;
+    line-height: 0.744;
+
+    display: block;
+
+    color: rgb(255, 255, 255);
+  }
+  .infobox__date-month {
+    font-family: 'Segoe UI';
+    font-size: 21px;
+    font-weight: 400;
+
+    display: block;
+
+    margin-top: 10px;
+
+    text-transform: uppercase;
+
+    color: rgb(178, 101, 41);
+  }
+}

@@ -1,0 +1,38 @@
+.devices-section__device-sticker {
+  position: relative;
+  right: 5%;
+  bottom: 20%;
+
+  width: 116px;
+  height: 116px;
+
+  transition: 1s;
+  text-align: center;
+
+  border-radius: 50%;
+  background-color: rgba(245, 196, 6, 1);
+}
+@media (min-width: 1020px) {
+  .devices-section__device-sticker {
+    bottom: 15%;
+  }
+}
+.devices-section__device-sticker:hover {
+  transform: scale(1.3);
+}
+.sticker__text {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.2;
+
+  position: absolute;
+  top: 50px;
+  left: 5px;
+
+  margin: 0 auto;
+
+  text-transform: uppercase;
+
+  color: rgb(255, 255, 255);
+}

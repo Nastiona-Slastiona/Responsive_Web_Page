@@ -1,0 +1,39 @@
+@import url('./-icon.css/menu__item-icon.css');
+@import url('./-link.css/menu__item-link.css');
+
+.menu__item {
+  font-family: 'SegoeWP';
+  font-size: 1em;
+  font-weight: normal;
+
+  display: flex;
+
+  width: max-content;
+  height: inherit;
+  padding: 1em;
+
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  border-right: 1px solid rgba(87, 82, 82, 0.247);
+}
+.menu__item:first-child {
+  padding-left: 30px;
+}
+
+@media (min-width: 700px) {
+  .menu__item {
+    font-size: 0.9em;
+
+    display: flex;
+    align-items: center;
+  }
+}
+
+.menu__item:hover {
+  transition: color 0.2s linear;
+  text-decoration: none;
+
+  background-color: #fb940e;
+}
