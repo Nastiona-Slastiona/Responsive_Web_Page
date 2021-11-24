@@ -1,4 +1,4 @@
-@import url('./__item/menu__item.css');
+@import url('./item/menu__item.css');
 .menu {
   display: flex;
   justify-content: space-between;

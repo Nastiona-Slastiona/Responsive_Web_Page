@@ -1,5 +1,5 @@
-@import url('./-icon.css/menu__item-icon.css');
-@import url('./-link.css/menu__item-link.css');
+@import url('./icon.css/menu__item-icon.css');
+@import url('./link.css/menu__item-link.css');
 
 .menu__item {
   font-family: 'SegoeWP';
