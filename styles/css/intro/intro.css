@@ -1,5 +1,5 @@
-@import url('./__text/intro__text.css');
-@import url('./__image/intro__image.css');
+@import url('__text/intro__text.css');
+@import url('__image/intro__image.css');
 .intro {
   display: inline-flex;
 
