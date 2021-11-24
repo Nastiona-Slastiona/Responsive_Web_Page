@@ -1,6 +1,7 @@
 @import url('./reset.css');
 @import url('./fonts/fonts.css');
 @import url('./banner/banner.css');
+@import url('./banner/_items/banner__item.css');
 @import url('./header/header.css');
 @import url('./intro/intro.css');
 @import url('./adertisement-section/advertisement-section.css');
