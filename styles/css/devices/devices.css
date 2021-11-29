@@ -55,6 +55,7 @@
   width: auto;
   height: 255px;
   margin-bottom: 40px;
+  margin-left: 10px;
 
   grid-column: 1;
 }
@@ -103,8 +104,7 @@
 
 .devices-section__device-sticker {
   position: absolute;
-  left: 0;
-  top: 18%;
+  top: 25%;
 
   width: 116px;
   height: 116px;
@@ -118,7 +118,7 @@
 
 @media (min-width: 1020px) {
   .devices-section__device-sticker {
-    bottom: 15%;
+    top: 20%;
   }
 }
 
