@@ -92,6 +92,7 @@
     );
   }
 }
+
 @media (min-width: 1020px) {
   .logo--large {
     padding-left: 0;

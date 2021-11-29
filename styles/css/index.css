@@ -3,9 +3,9 @@
 @import url('banner/banner.css');
 @import url('./header/header.css');
 @import url('./intro/intro.css');
-@import url('./adertisement-section/advertisement-section.css');
+@import url('./adertisement/advertisement.css');
 @import url('./infobox/infobox.css');
-@import url('./devices-section/devices-section.css');
+@import url('./devices/devices.css');
 @import url('./footer/footer.css');
 @import url('./logo/logo.css');
 @import url('./menu/menu.css');
@@ -14,6 +14,7 @@
 @import url('./common_elements/play-button--rounded.css');
 @import url('./common_elements/scrollbar.css');
 @import url('./common_elements/switch-button.css');
+@import url('/styles/icons/play-button.svg');
 
 html {
   box-sizing: border-box;

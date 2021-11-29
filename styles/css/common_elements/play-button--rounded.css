@@ -15,24 +15,22 @@
     position: absolute;
     top: 45%;
     left: 50%;
+    align-content: center;
   }
 }
 .play-button--rounded::before {
-  position: relative;
+  /* position: relative;
   top: 30%;
-  left: 39%;
-
-  width: 30px;
-  height: 20px;
-  padding: 10px;
-
-  content: '';
+  left: 39%; */
+  font-family: 'icomoon' !important;
+  content: '\ea1c';
+  color: #fff;
+  font-size: 50px;
+  padding: 10% 0 0 15%;
 
   opacity: 1;
-  background-image: url('../../../static/images/play.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
 }
+
 .play-button--rounded:hover {
   opacity: 1;
   background-color: rgba(245, 197, 7);
