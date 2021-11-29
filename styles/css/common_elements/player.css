@@ -1,6 +1,7 @@
 .player {
   display: none;
 }
+
 .player__button {
   display: none;
 }
@@ -23,6 +24,7 @@
     border-radius: 7px;
     background-color: rgb(155, 125, 8, 0.7);
   }
+
   .player__play-button {
     position: relative;
     right: 190px;
@@ -42,10 +44,12 @@
     content: '\ea1c';
     color: #fff;
   }
+
   .player__play-button:hover {
     opacity: 1;
     background-color: rgba(245, 197, 7);
   }
+
   .player__progressbar {
     display: inline;
 
@@ -56,6 +60,7 @@
     border-bottom-left-radius: 7px;
     background-color: rgb(255, 201, 24);
   }
+
   .player__volume-button {
     display: inline-flex;
     position: relative;

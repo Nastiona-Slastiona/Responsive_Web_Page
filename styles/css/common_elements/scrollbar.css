@@ -1,6 +1,7 @@
 .scrollbar__slider {
   display: none;
 }
+
 @media (min-width: 1020px) {
   .scrollbar__slider {
     position: relative;
@@ -19,6 +20,7 @@
     grid-row: 3;
   }
 }
+
 .scrollbar__slider:hover {
   background-color: rgb(236, 116, 3);
 }

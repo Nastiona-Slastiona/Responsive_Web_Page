@@ -1,9 +1,3 @@
-@import url('device/devices-section__device.css');
-@import url('device/sticker/devices-section__device-sticker.css');
-@import url('device/list/devices-section__devices-list.css');
-@import url('header/devices-section__header.css');
-@import url('list/devices-section__list.css');
-
 .devices-section {
   display: flex;
 

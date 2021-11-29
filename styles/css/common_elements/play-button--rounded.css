@@ -1,7 +1,7 @@
 .play-button--rounded {
   position: absolute;
-  top: 70%;
-  left: 67%;
+  top: 20%;
+  left: 70%;
 
   width: 60px;
   height: 60px;
@@ -18,6 +18,7 @@
     align-content: center;
   }
 }
+
 .play-button--rounded::before {
   /* position: relative;
   top: 30%;
