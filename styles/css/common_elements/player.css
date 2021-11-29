@@ -11,11 +11,11 @@
 
 @media (min-width: 1020px) {
   .player {
-    position: relative;
-    top: 90%;
-    left: 5%;
+    position: absolute;
+    top: 80%;
+    left: 7%;
 
-    display: inherit;
+    display: inline-flex;
 
     width: 403px;
     height: 13px;
@@ -25,9 +25,9 @@
   }
   .player__play-button {
     position: relative;
-    top: -25%;
-    left: -49%;
-    display: inherit;
+    right: 190px;
+    align-self: center;
+    display: inline-block;
 
     width: 20px;
     height: 20px;
@@ -47,7 +47,7 @@
     background-color: rgba(245, 197, 7);
   }
   .player__progressbar {
-    display: inherit;
+    display: inline;
 
     width: 150px;
     height: 13px;
@@ -57,7 +57,9 @@
     background-color: rgb(255, 201, 24);
   }
   .player__volume-button {
+    display: inline-flex;
     position: relative;
+    align-self: center;
     left: 250px;
 
     width: 10px;
