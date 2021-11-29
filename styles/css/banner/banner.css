@@ -1,4 +1,10 @@
 .banner {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.banner__container {
   display: inline-flex;
 
   width: 100%;
@@ -7,15 +13,15 @@
 }
 
 @media (min-width: 700px) {
-  .banner {
+  .banner__container {
     justify-content: center;
   }
 }
 
 @media (min-width: 1020px) {
-  .banner {
+  .banner__container {
     justify-content: space-between;
-
+    justify-self: center;
     margin-left: 5px;
     margin-bottom: 90px;
 
@@ -33,7 +39,7 @@
 
 @media (min-width: 1020px) {
   .banner .play-button--rounded {
-    margin-top: 8%;
+    top: 35%;
     left: 25%;
 
     display: inline-block;
@@ -102,12 +108,11 @@
 
 @media (min-width: 1020px) {
   .banner__switch-button--previous {
-    position: absolute;
-    left: -44%;
+    position: relative;
     display: inline-block;
     width: 32px;
     height: 57px;
-    margin-top: 150px;
+    margin-top: 140px;
 
     background-color: rgb(155, 125, 8, 0.9);
     background-size: 100% 100%;
@@ -135,13 +140,12 @@
   }
 
   .banner__switch-button--next {
-    position: absolute;
-    right: -44%;
+    position: relative;
     display: inline;
 
     width: 32px;
     height: 57px;
-    margin-top: 150px;
+    margin-top: 140px;
 
     background-color: rgb(155, 125, 8, 0.9);
     background-size: auto auto;
