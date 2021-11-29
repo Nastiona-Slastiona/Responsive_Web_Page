@@ -19,6 +19,7 @@ html {
   box-sizing: border-box;
   width: 100vw;
 }
+
 *,
 *::before,
 *::after {
@@ -33,6 +34,7 @@ body {
 
   color: black;
 }
+
 @media (min-width: 800px) {
   body {
     overflow-x: hidden;

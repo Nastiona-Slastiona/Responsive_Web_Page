@@ -12,6 +12,7 @@
     height: fit-content;
   }
 }
+
 @media (min-width: 1020px) {
   .container {
     width: 1020px;

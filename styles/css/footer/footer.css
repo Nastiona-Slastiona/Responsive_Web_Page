@@ -11,6 +11,7 @@
   background-color: #4c4c4c;
   box-shadow: 0 -3px 10px 2px rgb(31, 29, 29);
 }
+
 @media (min-width: 1020px) {
   .footer {
     position: relative;
