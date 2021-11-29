@@ -56,20 +56,12 @@
   height: 255px;
   margin-bottom: 40px;
 
-  background-image: url('../../../../static/images/computer.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-
   grid-column: 1;
 }
 
 .devices-section__device--middle {
   width: auto;
   height: 215px;
-
-  background-image: url('../../../../static/images/laptop.png');
-  background-repeat: no-repeat;
-  background-size: auto;
 
   grid-column: 2;
 }
@@ -80,10 +72,6 @@
   width: auto;
   height: 70px;
   margin-bottom: 80px;
-
-  background-image: url('../../../../static/images/phone.png');
-  background-repeat: no-repeat;
-  background-size: auto;
 
   grid-column: 3;
 }
@@ -114,9 +102,9 @@
 }
 
 .devices-section__device-sticker {
-  position: relative;
-  right: 5%;
-  bottom: 20%;
+  position: absolute;
+  left: 0;
+  top: 18%;
 
   width: 116px;
   height: 116px;
