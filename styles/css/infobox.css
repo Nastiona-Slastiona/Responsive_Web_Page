@@ -185,18 +185,6 @@
   grid-row: 1;
 }
 
-.message__opacity--middle {
-  opacity: 0.7;
-
-  grid-row: 2;
-}
-
-.message__opacity--low {
-  opacity: 0.5;
-
-  grid-row: 3;
-}
-
 .infobox__player {
   display: flex;
 
