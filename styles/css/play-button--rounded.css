@@ -1,0 +1,38 @@
+.play-button--rounded {
+  position: absolute;
+  top: 20%;
+  left: 70%;
+
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+  background-color: rgba(245, 197, 7, 0.8);
+}
+
+@media (min-width: 1020px) {
+  .play-button--rounded {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    align-content: center;
+  }
+}
+
+.play-button--rounded::before {
+  /* position: relative;
+  top: 30%;
+  left: 39%; */
+  font-family: 'icomoon' !important;
+  content: '\ea1c';
+  color: #fff;
+  font-size: 50px;
+  padding: 10% 0 0 15%;
+
+  opacity: 1;
+}
+
+.play-button--rounded:hover {
+  opacity: 1;
+  background-color: rgba(245, 197, 7);
+}

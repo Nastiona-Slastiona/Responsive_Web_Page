@@ -1,0 +1,44 @@
+@import url('./reset.css');
+@import url('./fonts/fonts.css');
+@import url('./banner.css');
+@import url('./header.css');
+@import url('./advertisement.css');
+@import url('./infobox.css');
+@import url('./devices.css');
+@import url('./footer.css');
+@import url('./logo.css');
+@import url('./menu.css');
+@import url('./container.css');
+@import url('./player.css');
+@import url('./play-button--rounded.css');
+@import url('./scrollbar.css');
+@import url('./sticker.css');
+@import url('./message.css');
+
+html {
+  box-sizing: border-box;
+  width: 100vw;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+
+  width: 100%;
+  margin: 0;
+
+  color: black;
+}
+
+@media (min-width: 800px) {
+  body {
+    overflow-x: hidden;
+
+    width: 100%;
+  }
+}

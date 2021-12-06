@@ -1,0 +1,78 @@
+.player {
+  display: none;
+}
+
+.player__button {
+  display: none;
+}
+
+.player__progressbar {
+  display: none;
+}
+
+@media (min-width: 1020px) {
+  .player {
+    position: absolute;
+    top: 70%;
+    left: 7%;
+
+    display: inline-flex;
+
+    width: 403px;
+    height: 13px;
+
+    border-radius: 7px;
+    background-color: rgb(155, 125, 8, 0.7);
+  }
+
+  .player__play-button {
+    position: relative;
+    right: 190px;
+    align-self: center;
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: rgba(245, 197, 7, 0.5);
+    justify-content: center;
+    padding-top: 1px;
+  }
+
+  .play-button:before {
+    font-family: 'icomoon' !important;
+    content: '\ea1c';
+    color: #fff;
+  }
+
+  .player__play-button:hover {
+    opacity: 1;
+    background-color: rgba(245, 197, 7);
+  }
+
+  .player__progressbar {
+    display: inline;
+
+    width: 150px;
+    height: 13px;
+
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    background-color: rgb(255, 201, 24);
+  }
+
+  .player__volume-button {
+    display: inline-flex;
+    position: relative;
+    align-self: center;
+    left: 250px;
+
+    width: 10px;
+    height: 10px;
+    padding: 8px;
+
+    background-image: url('../../../static/images/sound.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}

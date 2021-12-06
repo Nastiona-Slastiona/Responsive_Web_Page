@@ -1,0 +1,26 @@
+.scrollbar__slider {
+  display: none;
+}
+
+@media (min-width: 1020px) {
+  .scrollbar__slider {
+    position: relative;
+
+    display: inline;
+
+    width: 197px;
+    height: 15px;
+    margin: 120px 90px 20px;
+
+    border-radius: 10px;
+    background-color: rgb(236, 158, 3);
+    background-size: auto auto;
+
+    grid-column: 2;
+    grid-row: 3;
+  }
+}
+
+.scrollbar__slider:hover {
+  background-color: rgb(236, 116, 3);
+}
